@@ -7,11 +7,10 @@ USE database_estanciasApp;
 -- users TABLE
 CREATE TABLE users(
     user_id INT(250) NOT NULL,
-    name VARCHAR(100) NOT NULL,
+    username VARCHAR(100) NOT NULL,
     first_last_name VARCHAR(100) NOT NULL,
     second_last_name VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL,
-    enrollment VARCHAR(100) NOT NULL,
     password VARCHAR(100) NOT NULL,
     rol VARCHAR(100) NOT NULL
 );
