@@ -7,7 +7,7 @@ router.get('/signup', (req, res) => {
     res.render('auth/signup');
 });
 
-
+//Redirecciona a la ruta dependiendo si se registra bien el usuario
 router.post('/signup', passport.authenticate('local.signup', {
     successRedirect: '/profile',
     failureRedirect: '/singup',

@@ -46,32 +46,39 @@
     <div class="section-login-clic"> 
       <p>¿Ya tienes una cuenta?<a href="/login">Inicia sesión</a></p>
     </div>
-    <div class="container-register">
+      <form action="/signup" method="POST">
+        <div class="container-register">
       <div class="field">
         <h1 class="label">Registro</h1>
       </div>
       <div class="field">
         <label class="label">Nombre(s)</label>
         <div class="control">
-          <input class="input is-purple" type="text" placeholder="Tu Nombre(s)"/>
+          <input class="input is-purple" type="text" name="username" placeholder="Tu Nombre(s)"/>
         </div>
       </div>
       <div class="field">
-        <label class="label">Apellidos</label>
+        <label class="label">Primer apellido</label>
         <div class="control">
-          <input class="input is-purple" type="text" placeholder="Tu Apellido(s)"/>
+          <input class="input is-purple" type="text" name="first_last_name" placeholder="Tu Apellido(s)"/>
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Segundo apellido</label>
+        <div class="control">
+          <input class="input is-purple" type="text" name="second_last_name" placeholder="Tu Apellido(s)"/>
         </div>
       </div>
       <div class="field">
         <label class="label">Correo electrónico</label>
         <p class="control has-icons-left has-icons-right">
-          <input class="input is-purple" type="email" placeholder="Ingresa tu correo electronico"/><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
+          <input class="input is-purple" type="email" name="email" placeholder="Ingresa tu correo electronico"/><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
         </p>
       </div>
       <div class="field">
         <label class="label">Contraseña
           <p class="control has-icons-left">
-            <input class="input is-purple" type="password" placeholder="Ingresa una contraseña"/><span class="icon is-small is-left"><i class="fas fa-lock"></i></span>
+            <input class="input is-purple" type="password" name="password" placeholder="Ingresa una contraseña"/><span class="icon is-small is-left"><i class="fas fa-lock"></i></span>
             <p class="p-character"> </p>
           </p>
         </label>
@@ -79,7 +86,7 @@
       <div class="control field">
         <label class="label">Rol </label>
         <div class="select">
-          <select>
+          <select type="rol" name="rol">
             <option>Aspirante</option>
             <option>Alumno</option>
             <option>Egresado</option>
@@ -95,6 +102,7 @@
           </p>
         </label>
       </div>
+      </form>
     </div>
   </div>
 </div>
