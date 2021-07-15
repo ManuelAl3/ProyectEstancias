@@ -1,20 +1,18 @@
 :root {
     --main-color-message: #863f92;
     --main-color-massege-tittle: white;
+    --main-bg-color-box: white;
+    --main-span-color: #d93025;
 }
 
 /*Modulo de mensaje*/
 .message {
-    width: 70%;
-}
-
-.is-purple-massege {
-    color: var(--main-color-message);
+    width: 90%;
 }
 
 .message-header p {
     font-size: 16px;
-}*
+}
 
 .list-style li {
     list-style-type: disc;
@@ -25,6 +23,54 @@
     margin: 2%;
 }
 
+/*Titulo principal de las encuestas*/
+.title-main-quizz {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+/*Input*/
+.field-is {
+    margin: auto;
+    margin-right: 1.2rem;
+}
+.control .control-input {
+    width: 20%;
+    border: none;
+    background: none;
+    border-radius: none;
+    outline: 0;
+    border-bottom: 1px solid #363636;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+.control .control-input:hover {
+    border-bottom: 1px solid #863f92;
+}
+
+.control-input:focus {
+    border-color: var(--main-bd-color);
+}
+
+.section-check-other {
+    display: flex;
+}
+
+.section-check-other label {
+    font-weight: normal;
+}
+
+.section-check-other label:not(:last-child) {
+    margin-top: 7px;
+}
+
+/*Span*/
+.span-req {
+    color: var(--main-span-color);
+}
+
 /*Barra de progreso*/
 .progress {
     width: 50%;
@@ -32,5 +78,18 @@
 
 /*Sección de preguntas*/
 .quizz-main {
-    width: 80%;
+    width: 50%;
+    max-width: 90vw;
+}
+
+/*Boxes*/
+.box {
+    background-color: var(--main-bg-color-box);
+    box-shadow: none;
+}
+
+/*Check radio*/
+
+.section-check {
+    margin-left: 10%;
 }

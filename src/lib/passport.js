@@ -5,7 +5,7 @@ const pool = require('../database');
 const helpers = require('../lib/helpers');
 
 passport.use('local.signup', new LocalStrategy({
-    usernameField: 'name',
+    usernameField: 'username',
     first_last_nameField: 'first_last_name',
     second_last_nameField: 'second_last_name',
     emailField: 'email',
@@ -22,7 +22,7 @@ passport.use('local.signup', new LocalStrategy({
         password,
         rol } = req.body;
     const newUser = {
-        name,
+        username,
         first_last_name,
         second_last_name,
         email,
@@ -32,7 +32,6 @@ passport.use('local.signup', new LocalStrategy({
     };
     newUser.password = await helpers.encryptPassword(password);
     
-
     const result = await pool.query('INSERT INTO users SET ?', [newUser]);
     console.log(result);
     //newUser.id = result.insertId;
