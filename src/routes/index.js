@@ -5,6 +5,7 @@ router. get('/', (req, res) => {
     res.send('Hello world');
 });
 
+=======
 //Ruta del login
 router.get('/login', (req, res) => {
     res.render('auth/login');
@@ -30,5 +31,5 @@ router.get('/encuesta/encuesta-ingreso', function(req, res){
   router.get('/encuesta/encuesta-seguimiento-egresados', function(req, res){
     res.render('quizzes/graduate-follow-up-survey')
   });
-  
+
 module.exports = router;
