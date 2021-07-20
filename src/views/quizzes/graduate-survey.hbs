@@ -1,2 +1,152 @@
 {{> navigation }}
 {{> message-info }}
+
+<div class="title-main-quizz block">
+    <p class="title is-3">Encuesta de egresados</p>
+</div>
+<div class="quizz-main m-auto">
+    {{!-- Módulo periodo de egreso y año de egreso--}}
+    <div class="box">
+        <label class="label">Periodo de egreso:</label>
+        <div class="section-check block">
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    Enero - Abril
+                </label>
+            </div>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    Mayo - Agosto
+                </label>
+            </div>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    Septiembre - Diciembre
+                </label>
+            </div>
+        </div>
+        <label class="label">Año de egreso:</label>
+        <div class="select">
+            <select>
+                <option>Elige</option>
+                <option>With options</option>
+            </select>
+        </div>
+    </div>
+    <div class="field is-horizontal box">
+        <div class="field-is is-normal" id="field-quizz">
+            <label class="label">Empresa en dónde realizaste Estancias I: </label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <p class="control">
+                    <input class="input" type="text" placeholder=" Aquí tu escuela de procedencia">
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="field is-horizontal box">
+        <div class="field-is is-normal" id="field-quizz">
+            <label class="label">Empresa en dónde realizaste Estancias II: </label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <p class="control">
+                    <input class="input" type="text" placeholder=" Aquí tu escuela de procedencia">
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="field is-horizontal box">
+        <div class="field-is is-normal" id="field-quizz">
+            <label class="label">Empresa en dónde realizaste Estadías: </label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <p class="control">
+                    <input class="input" type="text" placeholder=" Aquí tu escuela de procedencia">
+                </p>
+            </div>
+        </div>
+    </div>
+    {{!--  Módulo checkbox--}}
+    <div class="box">
+        <label class="label">¿Realizaste proceso de dualidad?  </label>
+        <div class="section-check">
+            <label class="checkbox">
+                <input type="checkbox">
+                Si
+            </label>
+        </div>
+        <div class="section-check">
+            <label class="checkbox">
+                <input type="checkbox">
+                No
+            </label>
+        </div>
+        {{!--  Módulo checkbox--}}
+        <label class="label">En qué cuatrimestre(s):  </label>
+        <div class="section-check">
+            <label class="checkbox">
+                <input type="checkbox">
+                7mo
+            </label>
+        </div>
+        <div class="section-check">
+            <label class="checkbox">
+                <input type="checkbox">
+                8vo
+            </label>
+        </div>
+        <div class="section-check">
+            <label class="checkbox">
+                <input type="checkbox">
+                9no
+            </label>
+        </div>
+    </div>
+    
+    <div class="field is-horizontal box">
+        <div class="field-is is-normal" id="field-quizz">
+            <label class="label">Empresa(s) en los que realizaste dualidad: </label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <p class="control">
+                    <input class="input" type="text" placeholder=" Aquí tu escuela de procedencia">
+                </p>
+            </div>
+        </div>
+    </div>
+    {{!--  Módulo checkbox--}}
+    <div class="box">
+        <label class="label">¿Trabajas actualmente en algún perfil relacionado a tu licenciatura?  </label>
+        <div class="section-check">
+            <label class="checkbox">
+                <input type="checkbox">
+                Si
+            </label>
+        </div>
+        <div class="section-check">
+            <label class="checkbox">
+                <input type="checkbox">
+                No
+            </label>
+        </div>
+        <div class="field-is is-normal" id="field-quizz">
+            <label class="label">Perfil de LinkedIn: </label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <p class="control has-icons-left">
+                    <input class="input" type="text" placeholder=" Aquí tu escuela de procedencia"><span
+              class="icon is-left has-text-info"><i class="fab fa-linkedin" style="font-size:1.5em"></i></span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>

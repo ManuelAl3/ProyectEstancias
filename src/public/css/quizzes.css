@@ -1,6 +1,8 @@
 :root {
     --main-color-message: #863f92;
     --main-color-massege-tittle: white;
+    --main-bg-color-box: white;
+    --main-span-color: #d93025;
 }
 
 /*Modulo de mensaje*/
@@ -8,29 +10,114 @@
     width: 70%;
 }
 
-.is-purple-massege {
-    color: var(--main-color-message);
-}
-
-.message-header p {
-    font-size: 16px;
-}*
-
 .list-style li {
     list-style-type: disc;
     margin-left: 50px;
 }
 
-#container-message {
-    margin: 2%;
+/*Titulo principal de las encuestas*/
+.title-main-quizz {
+    width: 50%;
+    margin: auto;
+    text-align: center;
 }
 
-/*Barra de progreso*/
-.progress {
-    width: 50%;
+/*Input*/
+.field-is {
+    padding-bottom: .6em;
+}
+
+.control .control-input {
+    width: 20%;
+    border: none;
+    background: none;
+    border-radius: none;
+    outline: 0;
+    border-bottom: 1px solid #363636;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+.control .control-input:hover {
+    border-bottom: 1px solid #863f92;
+}
+
+.control-input:focus {
+    border-color: var(--main-bd-color);
+}
+
+.section-check-other {
+    display: flex;
+}
+
+.section-check-other label {
+    font-weight: normal;
+}
+
+.section-check-other label:not(:last-child) {
+    margin-top: 7px;
+}
+
+.control.input-width-small{
+    width: 40%;
+}
+
+/*Span*/
+.span-req {
+    color: var(--main-span-color);
 }
 
 /*Sección de preguntas*/
 .quizz-main {
-    width: 80%;
+    width: 50%;
+    max-width: 90vw;
+}
+@media only screen and (max-width: 1024px) {
+    .quizz-main {
+        width: 600px;
+    }
+    
+}
+
+/*Boxes*/
+.box {
+    background-color: var(--main-bg-color-box);
+    box-shadow: none;
+}
+
+
+/*Botón*/
+.btn-section .is-purple-quizz {
+    align-content: center;
+    margin-bottom: 13px;
+}
+
+.button.is-purple-quizz {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color-button);
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+.button.is-purple-quizz:hover {
+    background-color: rgb(124, 56, 136);
+}
+
+/*Icono*/
+.fab .fa-linkedin {
+    color: #863f92;
+}
+
+/*Código media*/
+@media screen and (min-width: 769px), print{
+    .field.is-horizontal {
+        display: revert;
+    }
+
+    .title-main-quizz {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
 }
