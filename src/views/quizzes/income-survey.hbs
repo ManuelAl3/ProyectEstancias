@@ -1,0 +1,78 @@
+{{> navigation }}
+<div id="container-message">
+    {{> message-info }}
+</div>
+
+{{!-- Barra de carga de las encuestas--}}
+<progress class="progress is-small is-primary m-auto" max="100">15%</progress>
+{{!--<progress class="progress is-danger m-auto" max="100">30%</progress>
+<progress class="progress is-medium is-dark m-auto" max="100">45%</progress>
+<progress class="progress is-large is-info m-auto" max="100">60%</progress>--}}
+
+{{!-- Módulo de encuesta--}}
+<div class="quizz-main box m-auto">
+    <div class="field is-horizontal">
+        <div class="field-label is-normal" id="field-quizz">
+            <label class="label">Escuela de procedencia:</label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <p class="control">
+                    <input class="input" type="text" placeholder="Text input">
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="field is-horizontal">
+        <div class="field-label is-normal" id="field-quizz">
+            <label class="label">Especialidad cursada en tu escuela de procedencia:</label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <p class="control">
+                    <input class="input" type="text" placeholder="Text input">
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class=" field-label is-normal">
+        <label class="label">¿Cómo te enteraste de la Universidad Politécnica de Durango?</label>
+    </div>
+    <div class="control">
+        <label class="radio">
+            <input type="radio" name="answer">
+            Páginas Web
+        </label>
+    </div>
+    <div class="control">
+        <label class="radio">
+            <input type="radio" name="answer">
+            Redes Sociales
+        </label>
+    </div>
+    <div class="control">
+        <label class="radio">
+            <input type="radio" name="answer">
+            Medios de comunicación (televisión, radio, periódico, otro)
+        </label>
+    </div>
+    <div class="control">
+        <label class="radio">
+            <input type="radio" name="answer">
+            Visita guiada programada por mi bachillerato
+        </label>
+    </div>
+    <div class="control">
+        <label class="radio">
+            <input type="radio" name="answer">
+            Pendones
+        </label>
+    </div>
+    <div class="control">
+        <label class="radio">
+            <input type="radio" name="answer">
+            Recomendación de alguien más
+        </label>
+    </div>
+</div>

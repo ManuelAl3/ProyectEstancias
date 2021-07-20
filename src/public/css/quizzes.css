@@ -1,0 +1,36 @@
+:root {
+    --main-color-message: #863f92;
+    --main-color-massege-tittle: white;
+}
+
+/*Modulo de mensaje*/
+.message {
+    width: 70%;
+}
+
+.is-purple-massege {
+    color: var(--main-color-message);
+}
+
+.message-header p {
+    font-size: 16px;
+}*
+
+.list-style li {
+    list-style-type: disc;
+    margin-left: 50px;
+}
+
+#container-message {
+    margin: 2%;
+}
+
+/*Barra de progreso*/
+.progress {
+    width: 50%;
+}
+
+/*Sección de preguntas*/
+.quizz-main {
+    width: 80%;
+}
