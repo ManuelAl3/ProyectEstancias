@@ -7,11 +7,7 @@
 
 /*Modulo de mensaje*/
 .message {
-    width: 90%;
-}
-
-.message-header p {
-    font-size: 16px;
+    width: 70%;
 }
 
 .list-style li {
@@ -19,22 +15,18 @@
     margin-left: 50px;
 }
 
-#container-message {
-    margin: 2%;
-}
-
 /*Titulo principal de las encuestas*/
 .title-main-quizz {
-    width: 85%;
+    width: 50%;
     margin: auto;
-    margin-bottom: 2%;
+    text-align: center;
 }
 
 /*Input*/
 .field-is {
-    margin: auto;
-    margin-right: 1.2rem;
+    padding-bottom: .6em;
 }
+
 .control .control-input {
     width: 20%;
     border: none;
@@ -66,20 +58,25 @@
     margin-top: 7px;
 }
 
+.control.input-width-small{
+    width: 40%;
+}
+
 /*Span*/
 .span-req {
     color: var(--main-span-color);
-}
-
-/*Barra de progreso*/
-.progress {
-    width: 50%;
 }
 
 /*Sección de preguntas*/
 .quizz-main {
     width: 50%;
     max-width: 90vw;
+}
+@media only screen and (max-width: 1024px) {
+    .quizz-main {
+        width: 600px;
+    }
+    
 }
 
 /*Boxes*/
@@ -88,8 +85,39 @@
     box-shadow: none;
 }
 
-/*Check radio*/
 
-.section-check {
-    margin-left: 10%;
+/*Botón*/
+.btn-section .is-purple-quizz {
+    align-content: center;
+    margin-bottom: 13px;
+}
+
+.button.is-purple-quizz {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color-button);
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+.button.is-purple-quizz:hover {
+    background-color: rgb(124, 56, 136);
+}
+
+/*Icono*/
+.fab .fa-linkedin {
+    color: #863f92;
+}
+
+/*Código media*/
+@media screen and (min-width: 769px), print{
+    .field.is-horizontal {
+        display: revert;
+    }
+
+    .title-main-quizz {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
 }

@@ -7,8 +7,8 @@
 <progress class="progress is-small is-primary m-auto" max="100">15%</progress>
 --}}
 
-<div class="title-main-quizz">
-    <p class="title is-1">Encuesta de egresados</p>
+<div class="title-main-quizz block">
+    <p class="title is-2">Encuesta de ingreso al programa de estudios de ingeniería en software</p>
 </div>
 
 {{!-- Módulo de encuesta--}}
@@ -25,7 +25,6 @@
             </div>
         </div>
     </div>
-
     <div class="field is-horizontal box">
         <div class="field-is is-normal" id="field-quizz">
             <label class="label">Especialidad cursada en tu escuela de procedencia: <span
@@ -34,13 +33,13 @@
         <div class="field-body">
             <div class="field">
                 <p class="control">
-                    <input class="input is" type="text" placeholder="Aqí tu especialidad cursada en tu escuela de procedencia">
+                    <input class="input is" type="text"
+                        placeholder="Aqí tu especialidad cursada en tu escuela de procedencia">
                 </p>
             </div>
         </div>
     </div>
-
-{{!-- Módulo checkradio--}}
+    {{!-- Módulo checkradio--}}
     <div class="box">
         <label class="label">¿Cómo te enteraste de la Universidad Politécnica de Durango?</label>
         <div class="section-check">
@@ -86,49 +85,59 @@
             <input class="input control-input" type="text">
         </div>
     </div>
-
-{{!-- Módulo checkbox--}}
+    {{!-- Módulo checkbox--}}
     <div class="box">
         <label class="label">¿Qué te motiva a estudiar Ingeniería en Software?</label>
         <div class="section-check">
             <label class="checkbox">
                 <input type="checkbox">
-                Diseñar y desarrollar software a la medida y/o genérico de calidad
+                Diseñar y desarrollar software a la medida y/o genérico de calidad.
             </label>
         </div>
         <div class="section-check">
             <label class="checkbox">
                 <input type="checkbox">
-                Diseñar y desarrollar software a la medida y/o genérico de calidad
+                Diseñar y crear bases de datos y aplicaciones para su manipulación.
             </label>
         </div>
         <div class="section-check">
             <label class="checkbox">
                 <input type="checkbox">
-                Diseñar y desarrollar software a la medida y/o genérico de calidad
+                Gestionar, administrar e implementar proyectos de innovación en el área de software.
             </label>
         </div>
         <div class="section-check">
             <label class="checkbox">
                 <input type="checkbox">
-                Diseñar y desarrollar software a la medida y/o genérico de calidad
+                Proporcionar soporte técnico y estratégico a la infraestructura de tecnologías de información.
             </label>
         </div>
         <div class="section-check">
             <label class="checkbox">
                 <input type="checkbox">
-                Diseñar y desarrollar software a la medida y/o genérico de calidad
+                Integrar nuevas soluciones de software a servicios modernos como el comercio electrónico.
             </label>
         </div>
         <div class="section-check">
             <label class="checkbox">
                 <input type="checkbox">
-                Diseñar y desarrollar software a la medida y/o genérico de calidad
+                Desarrollar investigación en el campo del desarrollo y reingeniería de las tecnologías de la
+                información.
             </label>
         </div>
         <div class=" control section-check-other">
             <label class="label">Otro. Especificar:</label>
             <input class="input control-input" type="text">
         </div>
+    </div>
+    {{!-- Botón de guardar encuesta--}}
+    <div class="btn-section block">
+        <label class="label">
+            <p class="control">
+                <button class="button is-purple-quizz ">
+                    Guardar
+                </button>
+            </p>
+        </label>
     </div>
 </div>

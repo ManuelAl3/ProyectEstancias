@@ -11,7 +11,6 @@ CREATE TABLE users(
     first_last_name VARCHAR(100) NOT NULL,
     second_last_name VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL,
-    enrollment VARCHAR(100) NOT NULL,
     password VARCHAR(100) NOT NULL,
     rol VARCHAR(100) NOT NULL
 );
