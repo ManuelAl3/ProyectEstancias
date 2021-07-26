@@ -1,9 +1,9 @@
 {{> navigation }}
-{{> message-info }}
 
 <div class="title-main-quizz block">
     <p class="title is-3">Encuesta de egresados</p>
 </div>
+{{> message-info }}
 <div class="quizz-main m-auto">
     {{!-- Módulo periodo de egreso y año de egreso--}}
     <div class="box">
@@ -40,31 +40,27 @@
         <div class="field-is is-normal" id="field-quizz">
             <label class="label">Empresa en dónde realizaste Estancias I: </label>
         </div>
-        <div class="field-body">
+        <div class="field-body block">
             <div class="field">
                 <p class="control">
                     <input class="input" type="text" placeholder=" Aquí tu escuela de procedencia">
                 </p>
             </div>
         </div>
-    </div>
-    <div class="field is-horizontal box">
         <div class="field-is is-normal" id="field-quizz">
             <label class="label">Empresa en dónde realizaste Estancias II: </label>
         </div>
-        <div class="field-body">
+        <div class="field-body block">
             <div class="field">
                 <p class="control">
                     <input class="input" type="text" placeholder=" Aquí tu escuela de procedencia">
                 </p>
             </div>
         </div>
-    </div>
-    <div class="field is-horizontal box">
         <div class="field-is is-normal" id="field-quizz">
             <label class="label">Empresa en dónde realizaste Estadías: </label>
         </div>
-        <div class="field-body">
+        <div class="field-body block">
             <div class="field">
                 <p class="control">
                     <input class="input" type="text" placeholder=" Aquí tu escuela de procedencia">
@@ -72,79 +68,304 @@
             </div>
         </div>
     </div>
-    {{!--  Módulo checkbox--}}
+    {{!-- Checkbox--}}
     <div class="box">
-        <label class="label">¿Realizaste proceso de dualidad?  </label>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                Si
-            </label>
+        <div class="block">
+            <label class="label">¿Realizaste proceso de dualidad? </label>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Si
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    No
+                </label>
+            </div>
         </div>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                No
-            </label>
+        {{!--  Checkbox--}}
+        <div class="block">
+
+            <label class="label">En qué cuatrimestre(s): </label>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    7mo
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    8vo
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    9no
+                </label>
+            </div>
         </div>
-        {{!--  Módulo checkbox--}}
-        <label class="label">En qué cuatrimestre(s):  </label>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                7mo
-            </label>
-        </div>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                8vo
-            </label>
-        </div>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                9no
-            </label>
-        </div>
-    </div>
-    
-    <div class="field is-horizontal box">
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">Empresa(s) en los que realizaste dualidad: </label>
-        </div>
-        <div class="field-body">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu escuela de procedencia">
-                </p>
+        <div class="block">
+            <div class="field-is is-normal" id="field-quizz">
+                <label class="label">Empresa(s) en los que realizaste dualidad: </label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <p class="control">
+                        <input class="input" type="text" placeholder=" Aquí tu escuela de procedencia">
+                    </p>
+                </div>
             </div>
         </div>
     </div>
     {{!--  Módulo checkbox--}}
     <div class="box">
-        <label class="label">¿Trabajas actualmente en algún perfil relacionado a tu licenciatura?  </label>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                Si
-            </label>
+        <div class="block">
+            <label class="label">¿Trabajas actualmente en algún perfil relacionado a tu licenciatura? </label>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Si
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    No
+                </label>
+            </div>
         </div>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                No
-            </label>
+        <div class="block">
+            <div class="field-is is-normal" id="field-quizz">
+                <label class="label">Perfil de LinkedIn: </label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <p class="control">
+                        <input class="input" type="text" placeholder=" Aquí tu escuela de procedencia">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        
+        <div class="field-is is-normal" id="field-quizz">
+            <label class="label">Considerando del 1 al 5, donde 1 es insuficiente y
+                4 es bueno, cómo consideras el desarrollo de habilidades para: </label>
         </div>
         <div class="field-is is-normal" id="field-quizz">
-            <label class="label">Perfil de LinkedIn: </label>
+            <label class="label">Analizar, diseñar y desarrollar proyectos de ingeniería de software mediante el uso de
+                metodologías para automatizar y optimizar los procesos de negocio de las empresas.</label>
         </div>
-        <div class="field-body">
-            <div class="field">
-                <p class="control has-icons-left">
-                    <input class="input" type="text" placeholder=" Aquí tu escuela de procedencia"><span
-              class="icon is-left has-text-info"><i class="fab fa-linkedin" style="font-size:1.5em"></i></span>
-                </p>
+        <div class="section-check block">
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    1 Insuficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    2 Deficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    3 Suficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    4 Bueno
+                </label>
+            </div>
+        </div>
+        <div class="field-is is-normal" id="field-quizz">
+            <label class="label">Validar las arquitecturas de software mediante el análisis de requerimientos para
+                eficientar los procesos de negocio de la empresa.
+            </label>
+        </div>
+        <div class="section-check block">
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    1 Insuficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    2 Deficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    3 Suficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    4 Bueno
+                </label>
+            </div>
+        </div>
+        <div class="field-is is-normal" id="field-quizz">
+            <label class="label">Formular soluciones integrales de software mediante el uso de normas, tecnologías y estándares para elevar la calidad tecnológica de la empresa.
+            </label>
+        </div>
+        <div class="section-check block">
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    1 Insuficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    2 Deficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    3 Suficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    4 Bueno
+                </label>
+            </div>
+        </div>
+        <div class="field-is is-normal" id="field-quizz">
+            <label class="label">Proponer tecnologías de información mediante el análisis detallado de las tecnologías de información existentes en la empresa para optimizar el uso de recursos tecnológicos.
+            </label>
+        </div>
+        <div class="section-check block">
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    1 Insuficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    2 Deficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    3 Suficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    4 Bueno
+                </label>
+            </div>
+        </div>
+        <div class="field-is is-normal" id="field-quizz">
+            <label class="label">Desarrollar tecnologías de información mediante técnicas de reingeniería para optimizar.
+            </label>
+        </div>
+        <div class="section-check block">
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    1 Insuficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    2 Deficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    3 Suficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    4 Bueno
+                </label>
+            </div>
+        </div>
+        <div class="field-is is-normal" id="field-quizz">
+            <label class="label">Comunicar de manera efectiva sus ideas, con adecuada expresión oral y escrita en español e inglés, apoyado en tecnologías de información y comunicación, dirigido a diferentes tipos de interlocutores o audiencias.
+            </label>
+        </div>
+        <div class="section-check block">
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    1 Insuficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    2 Deficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    3 Suficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    4 Bueno
+                </label>
+            </div>
+        </div>
+        <div class="field-is is-normal" id="field-quizz">
+            <label class="label">Reconocer la importancia del trabajo grupal y se integra y participa en forma efectiva en equipos multidisciplinarios y multilingües de trabajo. 
+            </label>
+        </div>
+        <div class="section-check block">
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    1 Insuficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    2 Deficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    3 Suficiente
+                </label>
+            </div>
+            <div>
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    4 Bueno
+                </label>
             </div>
         </div>
     </div>

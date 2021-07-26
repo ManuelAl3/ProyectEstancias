@@ -28,7 +28,7 @@ app.set('view engine', '.hbs');
 
 // Middlewares
 app.use(session({
-    secret: 'faztmysqlnodession',
+    secret: 'SextoEstcsMySQLnodesession',
     resave: false,
     saveUninitialized: false,
     store: new MySQLStore(database)
@@ -42,7 +42,8 @@ app.use(passport.session());
 
 // Global Variables
 app.use((req, res, next) => {
-    
+    app.locals.success = req.flash('success');
+    app.locals.message = req.flash('message');
     next();
 });
 

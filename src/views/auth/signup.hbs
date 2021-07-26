@@ -1,108 +1,68 @@
-<!--<div class="container p-4">
-    <div class="row">
-        <div class="col-md-4 mx-auto">
-            <div class="card text-center">
-                <div class="card-header">
-                    <h3>Sign Up</h3>
-                    <div class="card-body">
-                        <form action="/signup" method="POST">
-                            <div class="form-group mb-3">
-                                <input type="text" name="name" placeholder="Name" class="form-control" autofocus>
-                            </div>
-                            <div class="form-group mb-3">
-                                <input type="text" name="first_last_name" placeholder="First last name" class="form-control">
-                            </div>
-                            <div class="form-group mb-3">
-                                <input type="text" name="second_last_name" placeholder="Second last name" class="form-control">
-                            </div> 
-                            <div class="form-group mb-3">
-                                <input type="text" name="email" placeholder="Email" class="form-control">
-                            </div>
-                            <div class="form-group mb-3">
-                                <input type="text" name="enrollment" placeholder="Enrollment" class="form-control">
-                            </div> 
-                            <div class="form-group mb-3">
-                                <input type="password" name="password" placeholder="Password" class="form-control">
-                            </div>
-                            <div class="form-group mb-3">
-                                <input type="text" name="rol" placeholder="Rol" class="form-control">
-                            </div>
-                            <div class="formgroup mb-3">
-                                <button class="btn btn-success btn-block">
-                                    Sign Up
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>-->
-
 <div class="section-register">
   <div class="container-register-left" id="particles-js"></div>
   <div class="container-register-right" id="container-right">
+    <div class="section-login-clic">
+      <p>¿Ya tienes una cuenta?<a href="/login">Inicia sesión</a></p>
+    </div>
     <form class="container-register" action="/signup" method="POST">
-      <div class="field">
-        <h1 class="label title is-2">Registro</h1>
-      </div>
-      <div class="field">
-        <label class="label">Nombre(s)</label>
-        <div class="control">
-          <input class="input is-purple" type="text" name="username" placeholder="Tu Nombre(s)" />
+        <div class="field">
+          <h1 class="label">Registro</h1>
         </div>
-      </div>
-      <div class="field">
-        <label class="label">Primer apellido</label>
-        <div class="control">
-          <input class="input is-purple" type="text" name="first_last_name" placeholder="Tu Apellido(s)" />
+        <div class="field">
+          <label class="label">Nombre(s)</label>
+          <div class="control">
+            <input class="input is-purple" type="text" name="username" placeholder="Tu Nombre(s)" />
+          </div>
         </div>
-      </div>
-      <div class="field">
-        <label class="label">Segundo apellido</label>
-        <div class="control">
-          <input class="input is-purple" type="text" name="second_last_name" placeholder="Tu Apellido(s)" />
+        <div class="field">
+          <label class="label">Primer apellido</label>
+          <div class="control">
+            <input class="input is-purple" type="text" name="first_last_name" placeholder="Tu Apellido(s)" />
+          </div>
         </div>
-      </div>
-      <div class="field">
-        <label class="label">Correo electrónico</label>
-        <p class="control has-icons-left has-icons-right">
-          <input class="input is-purple" type="email" name="email" placeholder="Ingresa tu correo electronico" /><span
-            class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
-        </p>
-      </div>
-      <div class="field">
-        <label class="label">Contraseña
-          <p class="control has-icons-left">
-            <input class="input is-purple" type="password" name="password" placeholder="Ingresa una contraseña" /><span
-              class="icon is-small is-left"><i class="fas fa-lock"></i></span>
-            <p class="p-character"> </p>
+        <div class="field">
+          <label class="label">Segundo apellido</label>
+          <div class="control">
+            <input class="input is-purple" type="text" name="second_last_name" placeholder="Tu Apellido(s)" />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Correo electrónico</label>
+          <p class="control has-icons-left has-icons-right">
+            <input class="input is-purple" type="email" name="email" placeholder="Ingresa tu correo electronico" /><span
+              class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
           </p>
-        </label>
-      </div>
-      <div class="control field">
-        <label class="label">Rol </label>
-        <div class="select">
-          <select type="rol" name="rol">
-            <option>Aspirante</option>
-            <option>Alumno</option>
-            <option>Egresado</option>
-            <option>Docente</option>
-            <option>Administrador</option>
-          </select>
         </div>
-      </div>
-      <div class="field">
-        <label class="label">
-          <p class="control">
-            <button class="button is-purple is-rounded">Aceptar</button>
-          </p>
-        </label>
-      </div>
-      <div class="section-login-clic">
-        <p>¿Ya tienes una cuenta?<a href="/login">Inicia sesión</a></p>
-      </div>
+        <div class="field">
+          <label class="label">Contraseña
+            <p class="control has-icons-left">
+              <input class="input is-purple" type="password" name="password"
+                placeholder="Ingresa una contraseña" /><span class="icon is-small is-left"><i
+                  class="fas fa-lock"></i></span>
+              <p class="p-character"> </p>
+            </p>
+          </label>
+        </div>
+        <div class="control field">
+          <label class="label">Rol </label>
+          <div class="select">
+            <select type="rol" name="rol">
+              <option>Aspirante</option>
+              <option>Alumno</option>
+              <option>Egresado</option>
+              <option>Docente</option>
+              <option>Administrador</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">
+            <p class="control">
+              <button class="button is-purple is-rounded">Aceptar</button>
+            </p>
+          </label>
+        </div>
+    </form>
   </div>
   </form>
 </div>

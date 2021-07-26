@@ -30,5 +30,5 @@ router.get('/encuesta/encuesta-ingreso', function(req, res){
   router.get('/encuesta/encuesta-seguimiento-egresados', function(req, res){
     res.render('quizzes/graduate-follow-up-survey')
   });
-  
+
 module.exports = router;
