@@ -5,7 +5,6 @@ router. get('/', (req, res) => {
     res.send('Hello world');
 });
 
-=======
 //Ruta del login
 router.get('/login', (req, res) => {
     res.render('auth/login');

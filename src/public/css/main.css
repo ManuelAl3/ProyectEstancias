@@ -8,6 +8,7 @@
 
 /*Variables de color global*/
 :root {
+    --navbar-color-background: ;
     --bg-body-color: linear-gradient(to right, #f0f0f0, #f6f6f6);
     --main-color: #863f92;
     --main-bg-color: #863f92;
@@ -23,6 +24,8 @@
 body {
     background: var(--bg-body-color);
 }
+
+
 
 /*Contenedor registro y login*/
 .section-register, 

@@ -1,7 +1,5 @@
 {{> navigation }}
-<div id="container-message">
-    {{> message-info }}
-</div>
+
 
 {{!-- Barra de carga de las encuestas
 <progress class="progress is-small is-primary m-auto" max="100">15%</progress>
@@ -10,35 +8,34 @@
 <div class="title-main-quizz block">
     <p class="title is-2">Encuesta de ingreso al programa de estudios de ingeniería en software</p>
 </div>
+{{> message-info }}
 
 {{!-- Módulo de encuesta--}}
 <div class="quizz-main m-auto">
     <div class="field is-horizontal box">
-        <div class="field-is is-normal" id="field-quizz">
+        <div class="field-is is-normal">
             <label class="label">Escuela de procedencia: <span class="span-req">*</span></label>
         </div>
-        <div class="field-body">
+        <div class="field-body block">
             <div class="field">
                 <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu escuela de procedencia">
+                    <input class="input" type="text" placeholder="">
                 </p>
             </div>
         </div>
-    </div>
-    <div class="field is-horizontal box">
-        <div class="field-is is-normal" id="field-quizz">
+        <div class="field-is is-normal">
             <label class="label">Especialidad cursada en tu escuela de procedencia: <span
                     class="span-req">*</span></label>
         </div>
-        <div class="field-body">
+        <div class="field-body block">
             <div class="field">
                 <p class="control">
-                    <input class="input is" type="text"
-                        placeholder="Aqí tu especialidad cursada en tu escuela de procedencia">
+                    <input class="input is" type="text" placeholder="">
                 </p>
             </div>
         </div>
     </div>
+
     {{!-- Módulo checkradio--}}
     <div class="box">
         <label class="label">¿Cómo te enteraste de la Universidad Politécnica de Durango?</label>
@@ -80,9 +77,17 @@
                 </label>
             </div>
         </div>
-        <div class="control section-check-other">
-            <label class="label">Otro. Especificar:</label>
-            <input class="input control-input" type="text">
+        <div class="control ">
+            <div class="field-is is-normal">
+                <label class="label">Otro:</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <p class="control">
+                        <input class="input is" type="text" placeholder="">
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
     {{!-- Módulo checkbox--}}
@@ -125,9 +130,17 @@
                 información.
             </label>
         </div>
-        <div class=" control section-check-other">
-            <label class="label">Otro. Especificar:</label>
-            <input class="input control-input" type="text">
+        <div class="control ">
+            <div class="field-is is-normal">
+                <label class="label">Otro:</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <p class="control">
+                        <input class="input is" type="text" placeholder="">
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
     {{!-- Botón de guardar encuesta--}}
