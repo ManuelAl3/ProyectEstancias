@@ -6,7 +6,7 @@
     bottom: 0;
 }
 
-/*Variables de color global*/
+/*Variables globales*/
 :root {
     --navbar-color-background: ;
     --bg-body-color: linear-gradient(to right, #f0f0f0, #f6f6f6);

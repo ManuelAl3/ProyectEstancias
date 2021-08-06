@@ -13,12 +13,21 @@
     color: #863f92;
     background-color: #863f92;
     padding: 10px 20px;
-    margin-left: -20px;
+    margin-left: -40px;
     position: relative;
-    width: 30%;
-    box-shadow: 1px 1px 5px #000;
-    -moz-box-shadow: 1px 1px 5px #000;
-    -webkit-box-shadow: 1px 1px 5px #000;
+    width: 70%;
+    border-radius: 6px 6px 6px 0px;
+}
+
+.forma {
+    width: 0px;
+    height: 0px;
+    line-height: 0px;
+    border-left: 20px solid transparent;
+    border-top: 10px solid #742c81;
+    position: absolute;
+    top: 100%;
+    left: 0px;
 }
 
 .list-style li {
@@ -51,6 +60,16 @@
     color: var(--main-span-color);
 }
 
+.span-required-text {
+
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    line-height: 20px;
+    margin-top: 12px;
+}
+
 /*Sección de preguntas*/
 .quizz-main {
     width: 50%;
@@ -63,11 +82,36 @@
     box-shadow: none;
 }
 
-
 /*Botón*/
-.btn-section .is-purple-quizz {
+.btn-section .is-purple-quizz-save {
+    width: 30%;
     align-content: center;
     margin-bottom: 13px;
+    margin-top: 15px;
+    background-color: #853194;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: .375em;
+    background-position: center center;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.btn-section.block {
+    cursor: normal;
+}
+
+.btn-section.block .label {
+    cursor: normal;
+}
+
+.btn-section.block .label .control {
+    cursor: normal;
+}
+
+.btn-section .is-purple-quizz-save:hover {
+    background-color: #752981;
+    color: white;
 }
 
 .button.is-purple-quizz {
@@ -89,18 +133,20 @@
     }
 }
 
-@media screen and (min-width: 769px), print{
+@media screen and (min-width: 769px),
+print {
     .field.is-horizontal {
         display: revert;
     }
 
-    
+
 }
 
 @media only screen and (max-width: 769px) {
     .container-message {
         width: 90%;
     }
+
     .title-main-quizz {
         width: 90%;
         margin: auto;
