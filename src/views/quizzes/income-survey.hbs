@@ -11,68 +11,77 @@
 
 {{!-- Módulo de encuesta--}}
 <div class="quizz-main box m-auto">
-    <div class="field is-horizontal">
-        <div class="field-label is-normal" id="field-quizz">
-            <label class="label">Escuela de procedencia:</label>
-        </div>
-        <div class="field-body">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder="Text input">
-                </p>
+    <form action="/quizzes/add" method="post">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal" id="field-quizz">
+                <label class="label">Escuela de procedencia:</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <p class="control">
+                        <input name="answer" class="input" type="text" placeholder="Text input">
+                        <input id="question_id" name="question_id" type="hidden" value="1">
+                        <input id="user_id" name="user_id" type="hidden" value="1">
+                        <input id="option_id" name="option_id" type="hidden" value="">
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="field is-horizontal">
-        <div class="field-label is-normal" id="field-quizz">
-            <label class="label">Especialidad cursada en tu escuela de procedencia:</label>
-        </div>
-        <div class="field-body">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder="Text input">
-                </p>
+        <div class="field is-horizontal">
+            <div class="field-label is-normal" id="field-quizz">
+                <label class="label">Especialidad cursada en tu escuela de procedencia:</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <p class="control">
+                        <input name="answer" class="input" type="text" placeholder="Text input">
+                        <input id="question_id" name="question_id" type="hidden" value="2">
+                        <input id="user_id" name="user_id" type="hidden" value="1">
+                        <input id="option_id" name="option_id" type="hidden" value="">
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class=" field-label is-normal">
-        <label class="label">¿Cómo te enteraste de la Universidad Politécnica de Durango?</label>
-    </div>
-    <div class="control">
-        <label class="radio">
-            <input type="radio" name="answer">
-            Páginas Web
-        </label>
-    </div>
-    <div class="control">
-        <label class="radio">
-            <input type="radio" name="answer">
-            Redes Sociales
-        </label>
-    </div>
-    <div class="control">
-        <label class="radio">
-            <input type="radio" name="answer">
-            Medios de comunicación (televisión, radio, periódico, otro)
-        </label>
-    </div>
-    <div class="control">
-        <label class="radio">
-            <input type="radio" name="answer">
-            Visita guiada programada por mi bachillerato
-        </label>
-    </div>
-    <div class="control">
-        <label class="radio">
-            <input type="radio" name="answer">
-            Pendones
-        </label>
-    </div>
-    <div class="control">
-        <label class="radio">
-            <input type="radio" name="answer">
-            Recomendación de alguien más
-        </label>
-    </div>
+        <div class=" field-label is-normal">
+            <label class="label">¿Cómo te enteraste de la Universidad Politécnica de Durango?</label>
+        </div>
+        <div class="control">
+            <label class="radio">
+                <input type="radio" name="answer">
+                Páginas Web
+            </label>
+        </div>
+        <div class="control">
+            <label class="radio">
+                <input type="radio" name="answer">
+                Redes Sociales
+            </label>
+        </div>
+        <div class="control">
+            <label class="radio">
+                <input type="radio" name="answer">
+                Medios de comunicación (televisión, radio, periódico, otro)
+            </label>
+        </div>
+        <div class="control">
+            <label class="radio">
+                <input type="radio" name="answer">
+                Visita guiada programada por mi bachillerato
+            </label>
+        </div>
+        <div class="control">
+            <label class="radio">
+                <input type="radio" name="answer">
+                Pendones
+            </label>
+        </div>
+        <div class="control">
+            <label class="radio">
+                <input type="radio" name="answer">
+                Recomendación de alguien más
+            </label>
+        </div>
+        <button class="button is-white" type="submit">Enviar</button>
+    </form>
 </div>

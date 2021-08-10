@@ -1,0 +1,91 @@
+[33mcommit f8d31b8e9a99f1ee17999bda1bf6cda258a70495[m[33m ([m[1;36mHEAD -> [m[1;32mbackend[m[33m, [m[1;31morigin/frontend[m[33m)[m
+Merge: acdfa8b 2877547
+Author: Manuel Alberto <69221128+ManuelAl3@users.noreply.github.com>
+Date:   Tue Jul 20 12:00:19 2021 -0500
+
+    Merge branch 'master' into frontend
+
+[33mcommit acdfa8b5ed62411cf9c5543ee430a097e9fb160e[m
+Author: Manuel Alberto <manuel.ortiz.is@unipoli.edu.mx>
+Date:   Tue Jul 20 11:02:12 2021 -0500
+
+    Cambios en encuestas
+
+[33mcommit 28775470850b676b100a7a5a220ba85f1ea69353[m
+Merge: 6730a49 97adef3
+Author: JoelDirdam <73566638+JoelDirdam@users.noreply.github.com>
+Date:   Tue Jul 20 10:59:48 2021 -0500
+
+    Merge pull request #5 from JoelDirdam/backend
+    
+    Módulo de register y login concluidos
+
+[33mcommit 97adef35b5632620791edb986abeda720dae4e76[m
+Merge: 50cadb1 6730a49
+Author: JoelDirdam <73566638+JoelDirdam@users.noreply.github.com>
+Date:   Tue Jul 20 10:59:25 2021 -0500
+
+    Merge branch 'master' into backend
+
+[33mcommit 50cadb1a26d94ab81fc19d37939a1628594b072a[m[33m ([m[1;31morigin/backend[m[33m)[m
+Author: Joel Madrid <andres.javm00@gmail.com>
+Date:   Tue Jul 20 10:33:59 2021 -0500
+
+    Módulo de register y login concluidos
+
+[33mcommit 5ec81db2bd2a88dd2d66a29473dadc20ed0fd4bc[m
+Author: Manuel Alberto <manuel.ortiz.is@unipoli.edu.mx>
+Date:   Thu Jul 15 00:46:32 2021 -0500
+
+    Cambios en encuestas
+
+[33mcommit 6730a4929c628b0c0caf81d8f4da4b4fd645be14[m
+Merge: 0a0321a 218f83b
+Author: JoelDirdam <73566638+JoelDirdam@users.noreply.github.com>
+Date:   Thu Jul 15 00:38:52 2021 -0500
+
+    Merge pull request #3 from JoelDirdam/backend
+    
+    Cambios en el passport y en la vista signup
+
+[33mcommit 218f83bf9f95517599967cb8971812b139912154[m
+Author: Joel Madrid <andres.javm00@gmail.com>
+Date:   Thu Jul 15 00:34:38 2021 -0500
+
+    Cambios en el passport y en la vista signup
+
+[33mcommit 0a0321acd424c5d263ff81d7217ac2b9efac7b6b[m
+Merge: cdc3fd6 4aa6e08
+Author: JoelDirdam <73566638+JoelDirdam@users.noreply.github.com>
+Date:   Tue Jul 13 16:18:55 2021 -0500
+
+    Merge pull request #2 from JoelDirdam/frontend
+    
+    creación de páginas de las encuestas
+
+[33mcommit 4aa6e085977d9557df1a16c39e16288dc40e461d[m
+Author: Manuel Alberto <manuel.ortiz.is@unipoli.edu.mx>
+Date:   Tue Jul 13 03:25:14 2021 -0500
+
+    creación de páginas de las encuestas
+
+[33mcommit cdc3fd6fd7090afe3f02988b51c9137354298f70[m
+Merge: dc2333b f2071a1
+Author: JoelDirdam <73566638+JoelDirdam@users.noreply.github.com>
+Date:   Mon Jul 12 22:14:08 2021 -0500
+
+    Merge pull request #1 from JoelDirdam/frontend
+    
+    Unión del proyecto del lado del frontend
+
+[33mcommit f2071a194926c05a8662bee758e43673bd6c9f42[m
+Author: Manuel Alberto <manuel.ortiz.is@unipoli.edu.mx>
+Date:   Sat Jul 10 14:26:33 2021 -0500
+
+    Union del proyecto del lado del frontend
+
+[33mcommit dc2333bea8df8aace806d0fe8864e0daa886919a[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Joel Madrid <andres.javm00@gmail.com>
+Date:   Thu Jul 8 01:01:13 2021 -0500
+
+    first commit
