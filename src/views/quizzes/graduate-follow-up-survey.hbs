@@ -1,2 +1,257 @@
 {{> navigation }}
+
+<div class="title-main-quizz block">
+    <p class="title is-3">Encuesta de seguimiento de egresados</p>
+</div>
+
 {{> message-info }}
+
+<div class="quizz-main m-auto">
+    <div class="box">
+        <div class="tags">
+            <label class="label has-text-light">Lorem ipsum dolor sit amet.<p class="span-required-text">*Obligatorio
+                </p><span class="forma"></span></label>
+        </div>
+        {{!-- Checkbox--}}
+        <div class="block">
+            <label class="label">Actualmente vive en: <span class="span-req">*</span></label>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Ciudad de Durango
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    En otro municipio de Durango
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    En otro estado del país
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Fuera del país
+                </label>
+            </div>
+        </div>
+        <div class="block">
+
+            <label class="label">Donde vive, ¿es su lugar de origen? <span class="span-req">*</span></label>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Si
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    No
+                </label>
+            </div>
+        </div>
+    </div>
+    {{!-- Checkbox--}}
+    <div class="box">
+        <div class="tags">
+            <label class="label has-text-light">Lorem ipsum dolor sit amet.<p class="span-required-text">*Obligatorio
+                </p><span class="forma"></span></label>
+        </div>
+        <div class="block">
+            <label class="label">¿Está titulado? <span class="span-req">*</span></label>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Si
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    No
+                </label>
+            </div>
+        </div>
+        <div class="block">
+            <label class="label">Año en que tramitó su título: </label>
+            <div class="select">
+                <select>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
+                    <option>2005</option>
+                </select>
+            </div>
+        </div>
+        <div class="block">
+            <label class="label">En caso de no haberse titulado señale la causa:</label>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    Por no tener interés en ello
+                </label>
+            </div>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    Por falta de tiempo
+                </label>
+            </div>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    Por falta de información
+                </label>
+            </div>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    Por problemas económicos
+                </label>
+            </div>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    Está en trámite la titulación
+                </label>
+            </div>
+            <div class="control ">
+                <div class="field-is is-normal">
+                    <label class="label">Otro:</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input is" type="text" placeholder="">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="tags">
+            <label class="label has-text-light">Lorem ipsum dolor sit amet.<p class="span-required-text">
+                    *Obligatorio
+                </p><span class="forma"></span></label>
+        </div>
+        <div class="block">
+            <label class="label">Una vez que concluyó su licenciatura, ¿realizó estudios de posgrado? <span
+                    class="span-req">*</span></label>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Si
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    No
+                </label>
+            </div>
+        </div>
+        <div class="block">
+            <label class="label">En caso de haber realizado estudios de posgrado, indique el estatus del mismo <span
+                    class="span-req">*</span></label>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    En curso
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Concluido
+                </label>
+            </div>
+        </div>
+        <div class="block">
+            <div class="field-is is-normal">
+                <label class="label">Nombre del posgrado:</label>
+            </div>
+            <div class="field-body block">
+                <div class="field">
+                    <p class="control">
+                        <input class="input" type="text" placeholder="">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="field-is is-normal">
+                <label class="label">Institución en dónde lo realizó:</label>
+            </div>
+            <div class="field-body block">
+                <div class="field">
+                    <p class="control">
+                        <input class="input" type="text" placeholder="">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <label class="label">Seleccione los tipos de actualización que ha tomado una vez que egresó de la licenciatura:</label>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Cursos en línea
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Cursos precenciales
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Diplomados
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Certificaciones
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Maestría
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Doctorado
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        
+    </div>
+
+</div>

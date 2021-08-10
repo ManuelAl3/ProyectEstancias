@@ -1,87 +1,147 @@
 {{> navigation }}
-<div id="container-message">
-    {{> message-info }}
-</div>
 
-{{!-- Barra de carga de las encuestas--}}
+
+{{!-- Barra de carga de las encuestas
 <progress class="progress is-small is-primary m-auto" max="100">15%</progress>
-{{!--<progress class="progress is-danger m-auto" max="100">30%</progress>
-<progress class="progress is-medium is-dark m-auto" max="100">45%</progress>
-<progress class="progress is-large is-info m-auto" max="100">60%</progress>--}}
+--}}
+
+<div class="title-main-quizz block">
+    <p class="title is-2">Encuesta de ingreso al programa de estudios de ingeniería en software</p>
+</div>
+{{> message-info }}
 
 {{!-- Módulo de encuesta--}}
-<div class="quizz-main box m-auto">
-    <form action="/quizzes/add" method="post">
-        <div class="field is-horizontal">
-            <div class="field-label is-normal" id="field-quizz">
-                <label class="label">Escuela de procedencia:</label>
-            </div>
-            <div class="field-body">
-                <div class="field">
-                    <p class="control">
-                        <input name="answer" class="input" type="text" placeholder="Text input">
-                        <input id="question_id" name="question_id" type="hidden" value="1">
-                        <input id="user_id" name="user_id" type="hidden" value="1">
-                        <input id="option_id" name="option_id" type="hidden" value="">
-                    </p>
-                </div>
+<div class="quizz-main m-auto">
+    <div class="field is-horizontal box">
+        <div class="field-is is-normal">
+            <label class="label">Escuela de procedencia: <span class="span-req">*</span></label>
+        </div>
+        <div class="field-body block">
+            <div class="field">
+                <p class="control">
+                    <input class="input" type="text" placeholder="">
+                </p>
             </div>
         </div>
-        <div class="field is-horizontal">
-            <div class="field-label is-normal" id="field-quizz">
-                <label class="label">Especialidad cursada en tu escuela de procedencia:</label>
-            </div>
-            <div class="field-body">
-                <div class="field">
-                    <p class="control">
-                        <input name="answer" class="input" type="text" placeholder="Text input">
-                        <input id="question_id" name="question_id" type="hidden" value="2">
-                        <input id="user_id" name="user_id" type="hidden" value="1">
-                        <input id="option_id" name="option_id" type="hidden" value="">
-                    </p>
-                </div>
+        <div class="field-is is-normal">
+            <label class="label">Especialidad cursada en tu escuela de procedencia: <span
+                    class="span-req">*</span></label>
+        </div>
+        <div class="field-body block">
+            <div class="field">
+                <p class="control">
+                    <input class="input is" type="text" placeholder="">
+                </p>
             </div>
         </div>
 
-        <div class=" field-label is-normal">
-            <label class="label">¿Cómo te enteraste de la Universidad Politécnica de Durango?</label>
+    {{!-- Módulo checkradio--}}
+    <div class="box">
+        <label class="label">¿Cómo te enteraste de la Universidad Politécnica de Durango?</label>
+        <div class="section-check">
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    Páginas Web
+                </label>
+            </div>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    Redes Sociales
+                </label>
+            </div>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    Medios de comunicación (televisión, radio, periódico, otro)
+                </label>
+            </div>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    Visita guiada programada por mi bachillerato
+                </label>
+            </div>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    Pendones
+                </label>
+            </div>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="answer">
+                    Recomendación de alguien más
+                </label>
+            </div>
         </div>
-        <div class="control">
-            <label class="radio">
-                <input type="radio" name="answer">
-                Páginas Web
+        <div class="control ">
+            <div class="field-is is-normal">
+                <label class="label">Otro:</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <p class="control">
+                        <input class="input is" type="text" placeholder="">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{!-- Módulo checkbox--}}
+    <div class="box">
+        <label class="label">¿Qué te motiva a estudiar Ingeniería en Software?</label>
+        <div class="section-check">
+            <label class="checkbox">
+                <input type="checkbox">
+                Diseñar y desarrollar software a la medida y/o genérico de calidad.
             </label>
         </div>
-        <div class="control">
-            <label class="radio">
-                <input type="radio" name="answer">
-                Redes Sociales
+        <div class="section-check">
+            <label class="checkbox">
+                <input type="checkbox">
+                Diseñar y crear bases de datos y aplicaciones para su manipulación.
             </label>
         </div>
-        <div class="control">
-            <label class="radio">
-                <input type="radio" name="answer">
-                Medios de comunicación (televisión, radio, periódico, otro)
+        <div class="section-check">
+            <label class="checkbox">
+                <input type="checkbox">
+                Gestionar, administrar e implementar proyectos de innovación en el área de software.
             </label>
         </div>
-        <div class="control">
-            <label class="radio">
-                <input type="radio" name="answer">
-                Visita guiada programada por mi bachillerato
+        <div class="section-check">
+            <label class="checkbox">
+                <input type="checkbox">
+                Proporcionar soporte técnico y estratégico a la infraestructura de tecnologías de información.
             </label>
         </div>
-        <div class="control">
-            <label class="radio">
-                <input type="radio" name="answer">
-                Pendones
+        <div class="section-check">
+            <label class="checkbox">
+                <input type="checkbox">
+                Integrar nuevas soluciones de software a servicios modernos como el comercio electrónico.
             </label>
         </div>
-        <div class="control">
-            <label class="radio">
-                <input type="radio" name="answer">
-                Recomendación de alguien más
+        <div class="section-check">
+            <label class="checkbox">
+                <input type="checkbox">
+                Desarrollar investigación en el campo del desarrollo y reingeniería de las tecnologías de la
+                información.
             </label>
         </div>
-        <button class="button is-white" type="submit">Enviar</button>
-    </form>
+        <div class="control ">
+            <div class="field-is is-normal">
+                <label class="label">Otro:</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <p class="control">
+                        <input class="input is" type="text" placeholder="">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{!-- Botón de guardar encuesta--}}
+    {{> button-save }}
 </div>
