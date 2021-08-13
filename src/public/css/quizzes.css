@@ -15,7 +15,7 @@
     padding: 10px 20px;
     margin-left: -40px;
     position: relative;
-    width: 70%;
+    width: 40%;
     border-radius: 6px 6px 6px 0px;
 }
 
@@ -83,9 +83,12 @@
 }
 
 /*Botón*/
+.btn-section{
+    display: flex;
+    justify-content: center;
+}
 .btn-section .is-purple-quizz-save {
-    width: 30%;
-    align-content: center;
+    width: 100%;
     margin-bottom: 13px;
     margin-top: 15px;
     background-color: #853194;
@@ -97,12 +100,8 @@
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
-.btn-section.block {
-    cursor: normal;
-}
-
-.btn-section.block .label {
-    cursor: normal;
+.btn-section .label {
+    width: 40%;
 }
 
 .btn-section.block .label .control {
