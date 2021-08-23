@@ -25,7 +25,11 @@ body {
     background: var(--bg-body-color);
 }
 
-
+/*navbar*/
+.line-navbar {
+    border: solid 1px rgb(209, 209, 209);
+    height: 100%;
+}
 
 /*Contenedor registro y login*/
 .section-register, 

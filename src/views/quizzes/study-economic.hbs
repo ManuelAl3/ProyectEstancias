@@ -8,269 +8,296 @@
 
 <div class="quizz-main m-auto">
     <div class="box">
-        <label class="label">1. Estado civil: <span class="span-req">*</span></label>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                Soltero(a)
-            </label>
-        </div>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                Casado(a)
-            </label>
-        </div>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                Unión libre
-            </label>
-        </div>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                Divorciado(a)
-            </label>
-        </div>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                Viudo(a)
-            </label>
-        </div>
-    </div>
-    {{!-- Checkbox--}}
-    <div class="box">
-        <label class="label">2. ¿Eres foráneo(a)?  </label>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                Si
-            </label>
-        </div>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                No
-            </label>
-        </div>
-    </div>
-    <div class="field is-horizontal box">
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">3. En caso de ser foráneo específica:  <span class="span-req">*</span></label>
-        </div>
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">a. Estado: </label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu estado">
-                </p>
+        <div class="block">
+            <label class="label">1. Estado civil: <span class="span-req">*</span></label>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Soltero(a)
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Casado(a)
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Unión libre
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Divorciado(a)
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Viudo(a)
+                </label>
             </div>
         </div>
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">b. Municipio: </label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu municipio">
-                </p>
+        {{!-- Checkbox--}}
+        <div class="block">
+            <label class="label">2. ¿Eres foráneo(a)? </label>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Si
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    No
+                </label>
             </div>
         </div>
-    </div>
-    <div class="field is-horizontal box">
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">4. ¿De quién dependes económicamente?  </label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu CURP">
-                </p>
+        <div class="block">
+            <div class="field is-horizontal">
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">3. En caso de ser foráneo específica: <span class="span-req">*</span></label>
+                </div>
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">a. Estado: </label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">b. Municipio: </label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="field is-horizontal box">
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">5. ¿Quién paga tu inscripción?   </label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu CURP">
-                </p>
+        <div class="block">
+            <div class="field is-horizontal">
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">4. ¿De quién dependes económicamente? </label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="field is-horizontal box">
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">6. Menciona los integrantes de tu familia y edad de cada uno</label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu CURP">
-                </p>
+        <div class="block">
+            <div class="field is-horizontal">
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">5. ¿Quién paga tu inscripción? </label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="field is-horizontal box">
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">7. ¿Con quién vives actualmente? <span class="span-req">*</span></label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu CURP">
-                </p>
+        <div class="block">
+            <div class="field is-horizontal">
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">6. Menciona los integrantes de tu familia y edad de cada uno</label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="field is-horizontal box">
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">8. Ocupación de madre:   </label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu CURP">
-                </p>
+        <div class="block">
+            <div class="field is-horizontal">
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">7. ¿Con quién vives actualmente? <span class="span-req">*</span></label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="field is-horizontal box">
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">9. Ocupación de padre:   </label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu CURP">
-                </p>
+        <div class="block">
+            <div class="field is-horizontal">
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">8. Ocupación de madre: </label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="field is-horizontal box">
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">10. Número de personas que dependen económicamente de ti <span class="span-req">*</span></label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu CURP">
-                </p>
+        <div class="block">
+            <div class="field is-horizontal">
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">9. Ocupación de padre: </label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="field is-horizontal box">
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">11. ¿Cuántos miembros de tu familia aportan al ingreso familiar?  </label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu CURP">
-                </p>
+        <div class="block">
+            <div class="field is-horizontal">
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">10. Número de personas que dependen económicamente de ti <span
+                            class="span-req">*</span></label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    {{!-- Checkbox--}}
-    <div class="box">
-        <label class="label">12. ¿Trabajas? <span class="span-req">*</span></label>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                Si
-            </label>
-        </div>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                No
-            </label>
-        </div>
-    </div>
-    <div class="field is-horizontal box">
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">13. ¿En dónde trabajas?  </label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu lugar de trabajo">
-                </p>
+        <div class="block">
+            <div class="field is-horizontal">
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">11. ¿Cuántos miembros de tu familia aportan al ingreso familiar? </label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="field is-horizontal box">
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">14. Horario laboral  </label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu horario laboral">
-                </p>
+        {{!-- Checkbox--}}
+        <div class="block">
+            <label class="label">12. ¿Trabajas? <span class="span-req">*</span></label>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Si
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    No
+                </label>
             </div>
         </div>
-    </div>
-    {{!-- Checkbox--}}
-    <div class="box">
-        <label class="label">15. ¿Cuentas actualmente con alguna beca? <span class="span-req">*</span></label>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                Si
-            </label>
-        </div>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                No
-            </label>
-        </div>
-    </div>
-    <div class="field is-horizontal box">
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">16. ¿Qué beca es?  </label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu beca">
-                </p>
+        <div class="block">
+            <div class="field is-horizontal">
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">13. ¿En dónde trabajas? </label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    {{!-- Checkbox--}}
-    <div class="box">
-        <label class="label">15. ¿Cuentas actualmente con alguna beca? </label>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                Mensual
-            </label>
+        <div class="block">
+            <div class="field is-horizontal">
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">14. Horario laboral </label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                Bimestral
-            </label>
+        {{!-- Checkbox--}}
+        <div class="block">
+            <label class="label">15. ¿Cuentas actualmente con alguna beca? <span class="span-req">*</span></label>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Si
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    No
+                </label>
+            </div>
         </div>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                Trimestral
-            </label>
+        <div class="block">
+            <div class="field is-horizontal">
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">16. ¿Qué beca es? </label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                Anual
-            </label>
+        {{!-- Checkbox--}}
+        <div class="block">
+            <label class="label">15. ¿Cuentas actualmente con alguna beca? </label>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Mensual
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Bimestral
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Trimestral
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Anual
+                </label>
+            </div>
         </div>
     </div>
     {{!-- Botón de guardar encuesta--}}
