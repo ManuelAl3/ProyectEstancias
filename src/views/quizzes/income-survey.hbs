@@ -11,67 +11,66 @@
 {{> message-info }}
 
 {{!-- Módulo de encuesta--}}
-<div class="quizz-main m-auto">
+<form class="quizz-main m-auto" action="/quizzes/add" method="POST">
     <div class="field is-horizontal box">
         <div class="field-is is-normal">
-            <label class="label">Escuela de procedencia: <span class="span-req">*</span></label>
+            <label name="question_id" class="label">Escuela de procedencia: <span class="span-req">*</span></label>
         </div>
         <div class="field-body block">
             <div class="field">
                 <p class="control">
-                    <input class="input" type="text" placeholder="respuesta">
+                    <input name="answer" class="input" type="text" placeholder="respuesta">
                 </p>
             </div>
         </div>
         <div class="field-is is-normal">
-            <label class="label">Especialidad cursada en tu escuela de procedencia: <span
+            <label name="question_id" class="label">Especialidad cursada en tu escuela de procedencia: <span
                     class="span-req">*</span></label>
         </div>
         <div class="field-body block">
             <div class="field">
                 <p class="control">
-                    <input class="input is" type="text" placeholder="respuesta">
+                    <input name="answer" class="input is" type="text" placeholder="respuesta">
                 </p>
             </div>
         </div>
-
         {{!-- Módulo checkradio--}}
         <div class="block">
-            <label class="label">¿Cómo te enteraste de la Universidad Politécnica de Durango?</label>
+            <label name="question_id" class="label">¿Cómo te enteraste de la Universidad Politécnica de Durango?</label>
             <div class="section-check">
                 <div class="control">
                     <label class="radio">
-                        <input type="radio" name="answer">
+                        <input name="answer" type="radio" name="answer">
                         Páginas Web
                     </label>
                 </div>
                 <div class="control">
                     <label class="radio">
-                        <input type="radio" name="answer">
+                        <input name="answer" type="radio" name="answer">
                         Redes Sociales
                     </label>
                 </div>
                 <div class="control">
                     <label class="radio">
-                        <input type="radio" name="answer">
+                        <input name="answer" type="radio" name="answer">
                         Medios de comunicación (televisión, radio, periódico, otro)
                     </label>
                 </div>
                 <div class="control">
                     <label class="radio">
-                        <input type="radio" name="answer">
+                        <input name="answer" type="radio" name="answer">
                         Visita guiada programada por mi bachillerato
                     </label>
                 </div>
                 <div class="control">
                     <label class="radio">
-                        <input type="radio" name="answer">
+                        <input name="answer" type="radio" name="answer">
                         Pendones
                     </label>
                 </div>
                 <div class="control">
                     <label class="radio">
-                        <input type="radio" name="answer">
+                        <input name="answer" type="radio" name="answer">
                         Recomendación de alguien más
                     </label>
                 </div>
@@ -83,78 +82,82 @@
                 <div class="field-body">
                     <div class="field">
                         <p class="control">
-                            <input class="input is" type="text" placeholder="respuesta">
+                            <input name="answer" class="input is" type="text" placeholder="respuesta">
                         </p>
                     </div>
                 </div>
-
-
-    {{!-- Módulo checkradio--}}
-    <div class="box">
-        <label class="label">¿Cómo te enteraste de la Universidad Politécnica de Durango?</label>
-        <div class="section-check">
-            <div class="control">
-                <label class="radio">
-                    <input type="radio" name="answer">
-                    Páginas Web
-                </label>
-
             </div>
         </div>
         {{!-- Módulo checkbox--}}
         <div class="block">
-            <label class="label">¿Qué te motiva a estudiar Ingeniería en Software?</label>
+            <label name="question_id" class="label">¿Qué te motiva a estudiar Ingeniería en Software?</label>
             <div class="section-check">
                 <label class="checkbox">
-                    <input type="checkbox">
+                    <input name="answer" type="checkbox">
                     Diseñar y desarrollar software a la medida y/o genérico de calidad.
                 </label>
             </div>
             <div class="section-check">
                 <label class="checkbox">
-                    <input type="checkbox">
+                    <input name="answer" type="checkbox">
                     Diseñar y crear bases de datos y aplicaciones para su manipulación.
                 </label>
             </div>
             <div class="section-check">
                 <label class="checkbox">
-                    <input type="checkbox">
+                    <input name="answer" type="checkbox">
                     Gestionar, administrar e implementar proyectos de innovación en el área de software.
                 </label>
             </div>
             <div class="section-check">
                 <label class="checkbox">
-                    <input type="checkbox">
+                    <input name="answer" type="checkbox">
                     Proporcionar soporte técnico y estratégico a la infraestructura de tecnologías de información.
                 </label>
             </div>
             <div class="section-check">
                 <label class="checkbox">
-                    <input type="checkbox">
+                    <input name="answer" type="checkbox">
                     Integrar nuevas soluciones de software a servicios modernos como el comercio electrónico.
                 </label>
             </div>
             <div class="section-check">
                 <label class="checkbox">
-                    <input type="checkbox">
+                    <input name="answer" type="checkbox">
                     Desarrollar investigación en el campo del desarrollo y reingeniería de las tecnologías de la
                     información.
                 </label>
             </div>
             <div class="control ">
                 <div class="field-is is-normal">
-                    <label class="label">Otro:</label>
+                    <label name="question_id" class="label">Otro:</label>
                 </div>
                 <div class="field-body">
                     <div class="field">
                         <p class="control">
-                            <input class="input is" type="text" placeholder="respuesta">
+                            <input name="answer" class="input is" type="text" placeholder="respuesta">
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    {{!-- 
+    <div class="field is-horizontal">
+            <div class="field-label is-normal" id="field-quizz">
+                <label name="question_id" class="label">Escuela de procedencia:</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <p class="control">
+                        <input name="answer" class="input" type="text" placeholder="Text input">
+                        <input id="question_id" name="question_id" type="hidden" value="1">
+                        <input id="user_id" name="user_id" type="hidden" value="1">
+                        <input id="option_id" name="option_id" type="hidden" value="">
+                    </p>
+                </div>
+            </div>
+    </div>--}}
     {{!-- Botón de guardar encuesta--}}
     {{> button-save }}
-</div>
+</form>

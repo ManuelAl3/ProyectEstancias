@@ -50,8 +50,8 @@ CREATE TABLE quizzes(
     description VARCHAR(3000) NOT NULL,
     created_at timestamp NOT NULL DEFAULT current_timestamp,
     created_by VARCHAR(250) NOT NULL,
-    statusQuiz_id INT(250) NOT NULL,
-    CONSTRAINT fk_quizzes_statusQuizzes FOREIGN KEY (statusQuiz_id) REFERENCES statusQuizzes(statusQuiz_id)
+    user_id INT(250),
+    CONSTRAINT fk_quizzes_users FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
 
 ALTER TABLE quizzes
@@ -69,8 +69,8 @@ CREATE TABLE sections(
     name VARCHAR(250) NOT NULL,
     description VARCHAR(3000) NOT NULL,
     quiz_id INT(250) NOT NULL,
-    CONSTRAINT fk_sections_quizzes FOREIGN KEY (quiz_id) REFERENCES quizzes(quiz_id)
-    CONSTRAINT fk_sections_questions FOREIGN KEY (question_id) REFERENCES questions(question_id)
+    --CONSTRAINT fk_sections_quizzes FOREIGN KEY (quiz_id) REFERENCES quizzes(quiz_id)
+    --CONSTRAINT fk_sections_questions FOREIGN KEY (question_id) REFERENCES questions(question_id)
 );
 
 ALTER TABLE sections
@@ -88,8 +88,8 @@ CREATE TABLE subsections(
     name VARCHAR(250) NOT NULL,
     description VARCHAR(3000) NOT NULL,
     section_id INT(250) NOT NULL,
-    CONSTRAINT fk_subsection_sections FOREIGN KEY (section_id) REFERENCES sections(section_id)
-    CONSTRAINT fk_subsection_questions FOREIGN KEY (question_id) REFERENCES questions(question_id)
+    --CONSTRAINT fk_subsection_sections FOREIGN KEY (section_id) REFERENCES sections(section_id)
+    --CONSTRAINT fk_subsection_questions FOREIGN KEY (question_id) REFERENCES questions(question_id)
 );
 
 ALTER TABLE subsections
@@ -108,15 +108,15 @@ CREATE TABLE questions(
     section_id INT(250) NOT NULL,
     subsection_id INT(250) NOT NULL,
     
-    CONSTRAINT fk_questions_section FOREIGN KEY (section_id) REFERENCES sections(section_id)
-    CONSTRAINT fk_questions_subsection FOREIGN KEY (subsection_id) REFERENCES subsections(subsection_id)
+   -- CONSTRAINT fk_questions_section FOREIGN KEY (section_id) REFERENCES sections(section_id)
+   -- CONSTRAINT fk_questions_subsection FOREIGN KEY (subsection_id) REFERENCES subsections(subsection_id)
 );
 
 ALTER TABLE questions
-    ADD PRIMARY KEY (answer_id);
+    ADD PRIMARY KEY (question_id);
 
 ALTER TABLE questions
-    MODIFY answer_id INT(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 1;
+    MODIFY question_id INT(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 1;
 
 DESCRIBE questions;
 
@@ -146,9 +146,9 @@ CREATE TABLE answers(
     created_at timestamp NOT NULL DEFAULT current_timestamp,
     option_id INT(250) NOT NULL,
     question_id INT(250) NOT NULL,
-    CONSTRAINT fk_answers_users FOREIGN KEY (user_id) REFERENCES users(user_id)
-    CONSTRAINT fk_answers_questions FOREIGN KEY (question_id) REFERENCES questions(question_id)
-    CONSTRAINT fk_answers_optionsQ FOREIGN KEY (option_id) REFERENCES optionsQuestion(option_id)
+    --CONSTRAINT fk_answers_users FOREIGN KEY (user_id) REFERENCES users(user_id)
+    --CONSTRAINT fk_answers_questions FOREIGN KEY (question_id) REFERENCES questions(question_id)
+    --CONSTRAINT fk_answers_optionsQ FOREIGN KEY (option_id) REFERENCES optionsQuestion(option_id)
 );
 
 ALTER TABLE answers
