@@ -1,1 +1,121 @@
+{{!---
 {{this.data.[0].answer}}
+<div class="columns m-auto">
+  <div class="column">
+    <h4>Datos</h4>
+        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth box">
+            <thead>
+            <tr>
+            <th>ID</th>
+            <td>Respuesta</td>
+            <td>Fecha</td>
+            </tr>
+            </thead>
+        
+        
+            <tbody>
+            <tr>
+            <th>{{this.answer_id}}</th>
+            <td>{{this.answer}}</td>
+            <td>{{this.created_at}}</td>
+            </tr>
+            </tbody>
+
+        
+        </table>
+  </div>
+  <div class="column">
+      <h4>Editar</h4>
+  </div>
+</div> --}}
+
+<form class="quizz-main m-auto" action="/save" method="POST">
+    {{#each data}}
+    <div class="field is-horizontal box">
+        <div class="field-is is-normal">
+            <label name="question_id" class="label">
+                {{question_id}}
+            </label>
+
+        </div>
+        <div class="field-body block">
+            <div class="field">
+                <label name="question_id" class="label">
+                    {{answer_1}}
+                </label>
+            </div>
+        </div>
+        <div class="field-body block">
+            <div class="field">
+                <label name="question_id" class="label">
+                    {{created_at}}
+                </label>
+            </div>
+        </div>
+
+        <div class="field-is is-normal">
+            <label name="question_id" class="label">
+                {{question_id}}
+            </label>
+
+        </div>
+        <div class="field-body block">
+            <div class="field">
+                <label name="question_id" class="label">
+                    {{answer_2}}
+                </label>
+            </div>
+        </div>
+        <div class="field-body block">
+            <div class="field">
+                <label name="question_id" class="label">
+                    {{created_at}}
+                </label>
+            </div>
+        </div>
+
+        <div class="field-is is-normal">
+            <label name="question_id" class="label">
+                {{question_id}}
+            </label>
+
+        </div>
+        <div class="field-body block">
+            <div class="field">
+                <label name="question_id" class="label">
+                    {{answer_3}}
+                </label>
+            </div>
+        </div>
+        <div class="field-body block">
+            <div class="field">
+                <label name="question_id" class="label">
+                    {{created_at}}
+                </label>
+            </div>
+        </div>
+
+        <div class="field-is is-normal">
+            <label name="question_id" class="label">
+                {{question_id}}
+            </label>
+
+        </div>
+        <div class="field-body block">
+            <div class="field">
+                <label name="question_id" class="label">
+                    {{answer_4}}
+                </label>
+            </div>
+        </div>
+        <div class="field-body block">
+            <div class="field">
+                <label name="question_id" class="label">
+                    {{created_at}}
+                </label>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+</form>

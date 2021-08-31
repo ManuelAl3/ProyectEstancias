@@ -151,6 +151,8 @@ CREATE TABLE answers(
     --CONSTRAINT fk_answers_optionsQ FOREIGN KEY (option_id) REFERENCES optionsQuestion(option_id)
 );
 
+
+
 ALTER TABLE answers
     ADD PRIMARY KEY (answer_id);
 
@@ -160,4 +162,16 @@ ALTER TABLE answers
 DESCRIBE answers;
 
 INSERT INTO quizzes(quiz_id,type,title,description,created_by,updated_at,status,user_id,created_at)
-    VALUES("","ingreso","Encusta de Ingreso","Encuesta de ingreso al programa de estudios de ingenieria en software","","","0","","")
+    VALUES("","ingreso","Encusta de Ingreso","Encuesta de ingreso al programa de estudios de ingenieria en software","","","0","","");
+
+-- TABLA respuestas V2.0
+CREATE TABLE incomeSurvey(
+    answer_id INT(250) NOT NULL,
+    answer_1 VARCHAR(3000) NOT NULL,
+    answer_2 VARCHAR(3000) NOT NULL,
+    answer_3 VARCHAR(3000) NOT NULL,
+    answer_4 VARCHAR(3000) NOT NULL,
+    user_id INT(250) NOT NULL,
+    created_at timestamp NOT NULL DEFAULT current_timestamp,
+    question_id INT(250) NOT NULL
+);
