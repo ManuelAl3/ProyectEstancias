@@ -1,4 +1,4 @@
-const router = require('express').Router();
+/*const router = require('express').Router();
 
 const customerController = require('../lib/controllers/customerController');
 
@@ -9,4 +9,4 @@ router.get('/', customerController.list);
 //router.post('/update/:id', customerController.update);
 //router.get('/delete/:id', customerController.delete);
 
-module.exports = router;
+module.exports = router;*/

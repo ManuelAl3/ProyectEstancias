@@ -52,7 +52,7 @@ passport.use('local.signup', new LocalStrategy({ //By default, LocalStrategy exp
     return done(null, newUser);
 }));
 
-//Guarda el usuario dentro de la seseón
+//Guarda el usuario dentro de la sesión
 passport.serializeUser((user, done) => {
     done(null, user.user_id);
 });

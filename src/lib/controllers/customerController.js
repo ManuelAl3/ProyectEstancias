@@ -1,4 +1,4 @@
-const mysql = require('mysql');
+/*const mysql = require('mysql');
 const controller = {};
 const { database } = require ('../../keys');
 const pool = mysql.createPool(database);
@@ -18,4 +18,5 @@ controller.list = (req, res) => {
   });
 };
 
-module.exports = controller;
+
+module.exports = controller;*/
