@@ -16,14 +16,15 @@ exports.save = (req, res) => {
             answerCheckIngreso  = answerCheckIngreso +0;
         } else {
             answerCheckIngreso  = answerCheckIngreso +1;
-        };
-    };
+        }
+    }
 
     console.log(answerCheckIngreso + "-" + answer);
     conexion.query('INSERT INTO incomeSurvey (`answer_1`, `answer_2`, `answer_3`, `answer_4`, `answerCheckIngreso`, `answerCheckRadio` ) VALUES (?,?,?,?,?,?)', [answer[0], answer[1], answer[2], answer[3], answerCheckIngreso], (error, results) => {
         //console.log(answer);
         console.log(answer_c);
         //console.log(user_id);
+        console.log(results);
         if (error) {
             console.log(error);
         } else {
