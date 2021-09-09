@@ -1,2 +1,39 @@
+@media only screen and (max-width: 768px) {
 
+    .section-register,
+    .section-login {
+        display: flex;
+        height: 100vh;
+    }
 
+    .container-register-right,
+    .container-login-right {
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        backdrop-filter: inherit;
+        width: 100%;
+        box-shadow: inset 25px 0px 25px -25px rgba(255, 255, 255, 0.45);
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    /*Contenedor del registro y login lado izquierdo*/
+    .container-register-left,
+    .container-login-left {
+        display: none;
+    }
+
+    .container-register,
+    .container-login {
+        width: 80%;
+    }
+}
+
+span.img-wave-top {
+
+    width: 100%;
+}
