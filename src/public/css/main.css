@@ -23,9 +23,14 @@
 
 body {
     background: var(--bg-body-color);
+    min-height: 100vh;
 }
 
-
+/*navbar*/
+.line-navbar {
+    border: solid 1px rgb(209, 209, 209);
+    height: 100%;
+}
 
 /*Contenedor registro y login*/
 .section-register, 
@@ -39,6 +44,7 @@ body {
 .container-login-left {
     display: flex;
     background-image: url(../images/logo-isw.jpg);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: 0px -35px;
     width:60%;
@@ -52,27 +58,27 @@ body {
     width: 40%;
     box-shadow: inset 25px 0px 25px -25px rgba(255, 255, 255, 0.45);
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-    justify-content: center;
+    flex-wrap: nowrap;
     align-items: center;
-    animation: transicion 1.5s cubic-bezier(0, 0, 0.2, 1);
+    justify-content: center;
+    flex-direction: column;
+    animation: transicion 1.5s ease-out;
 }
 
 /*Transición en login y registro*/
 @keyframes transicion{
     0%{
         opacity: 0;
-        transform: translateY(0px)
+        transform: translateX(0px);
     }
     50%{
         opacity: 0;
-        transform: translateY(-200px);
+        transform: translateX(200px);
     }
     100%{
         opacity: 1;
         visibility: visible;
-        transform: translateY(0px);
+        transform: translateX(0px);
     }
 }
 
@@ -86,7 +92,7 @@ body {
     width: 75%;
 }
 
-/*Input*/
+/*Inputs*/
 .is-purple{
     border-color: var(--main-bg-color);
     border: none;
@@ -122,6 +128,20 @@ i.fas {
     outline: none;
 }
 
+button.is-redounded-main {
+    color: rgba(0,0,0,0.5);
+    width: 100%;
+    border: none;
+    font-weight: bolder;
+}
+
+button.is-redounded-main:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.5);
+    border: solid .05px rgba(0, 0, 0, 0.164);
+}
+
+
 .hashtag {
     color: var(--main-icon-tdf);
 }
@@ -130,6 +150,7 @@ i.fas {
 .section-register-clic {
     color: var(--main-icon-tdf);
     padding: 8px;
+    text-align: center;
 }
 
 .section-login-clic a, 
@@ -143,7 +164,7 @@ i.fas {
     color: var(--main-color);
 }
 
-input.input:hover {
+input.is-purple:hover {
     border-bottom: solid var(--main-bg-color) 2px;
     border-color: var(--main-bg-color);
 }
@@ -164,7 +185,7 @@ select:hover {
     background: rgb(243, 243, 243); 
 }
 
-.input:focus {
+.is-purple:focus {
     border-color: var(--main-bd-color);
     box-shadow: 0 0 0.125em var(--main-bd-f-color);
 }

@@ -10,7 +10,7 @@ router.get('/signup', (req, res) => {
 //Redirecciona a la ruta dependiendo si se registra bien el usuario
 router.post('/signup', passport.authenticate('local.signup', {
     successRedirect: '/profile',
-    failureRedirect: '/singup',
+    failureRedirect: '/signup',
     failureFlash: true
 }));
 
@@ -27,7 +27,7 @@ router.post('/login', (req, res, next) => {
 });
 
 router.get('/profile', (req, res) => {
-    res.send('this si your Profile')
+    res.send('this is your Profile')
 });
 
 module.exports = router;

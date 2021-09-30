@@ -44,6 +44,7 @@ passport.use('local.signup', new LocalStrategy({ //By default, LocalStrategy exp
         password,
         rol
     };
+    console.log(req.body);
     newUser.password = await helpers.encryptPassword(password);
     const result = await pool.query('INSERT INTO users SET ?', [newUser]);
     console.log(result);
@@ -56,7 +57,7 @@ passport.serializeUser((user, done) => {
     done(null, user.id);
 });
 
-//Guarda el usuario dentro de la seseón
+//Guarda el usuario dentro de la sesión
 passport.serializeUser((user, done) => {
     done(null, user.user_id);
 });

@@ -1,37 +1,14 @@
 {{> navigation }}
 
 <div class="title-main-quizz block">
-    <p class="title is-3">Ficha de identificación de alumnos</p>
+    <p class="title is-2">Ficha de identificación de alumnos</p>
 </div>
 {{> message-info }}
 <div class="quizz-main m-auto">
-    {{!-- Matrícula--}}
-    <div class="field is-horizontal box">
-        <div class="tags">
-            <label class="label has-text-light">Lorem ipsum dolor sit amet.<span class="forma"></span></label>
-        </div>
-        <div class="field">
-            <p class="span-required-text">
-                *Obligatorio
-            </p>
-            
-        </div>
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">Matrícula: <span class="span-req">*</span></label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder="respuesta">
-                </p>
-            </div>
-        </div>
-    </div>
     {{!-- Módulo periodo de egreso y año de egreso--}}
     <div class="field is-horizontal box">
         <div class="tags">
-            <label class="label has-text-light">Lorem ipsum dolor sit amet.<p class="span-required-text">*Obligatorio
-                </p><span class="forma"></span></label>
+            <label class="label has-text-light">Datos de egreso<span class="forma"></span></label>
         </div>
         <label class="label">Periodo de egreso:</label>
         <div class="section-check block">
@@ -77,229 +54,240 @@
             </select>
         </div>
     </div>
-    {{!-- Módulo fecha de nacimiento--}}
+    {{!-- Módulo datos generales--}}
     <div class="field is-horizontal box">
         <div class="tags">
-            <label class="label has-text-light">Lorem ipsum dolor sit amet.<p class="span-required-text">*Obligatorio
-                </p><span class="forma"></span></label>
+            <label class="label has-text-light">Datos generales<span class="forma"></span></label>
         </div>
-        <label class="label">Fecha de nacimiento: <span class="span-req">*</span></label>
-        <form class="block">
-            <input class="input" type="date" name="day">
-        </form>
+        {{!-- Matrícula--}}
+        <div class="block">
+            <div class="field is-horizontal">
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">Matrícula: <span class="span-req">*</span></label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input is-purple" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <label class="label">Fecha de nacimiento: <span class="span-req">*</span></label>
+            <form>
+                <input class="input is-purple" type="date" name="day">
+            </form>
+        </div>
         {{!-- Género--}}
-        <label class="label">Género: <span class="span-req">*</span></label>
-        <div class="section-check">
-            <div class="control">
-                <label class="radio">
-                    <input type="radio" name="answer">
-                    Femenino
-                </label>
-            </div>
-            <div class="control">
-                <label class="radio">
-                    <input type="radio" name="answer">
-                    Masculino
-                </label>
-            </div>
-            <div class="control">
-                <label class="radio">
-                    <input type="radio" name="answer">
-                    otro
-                </label>
-            </div>
-        </div>
-    </div>
-    {{!-- CURP--}}
-    <div class="field is-horizontal box">
-        <div class="tags">
-            <label class="label has-text-light">Lorem ipsum dolor sit amet.<p class="span-required-text">*Obligatorio
-                </p><span class="forma"></span></label>
-        </div>
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">CURP: <span class="span-req">*</span></label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder="respuesta">
-                </p>
+        <div class="block">
+            <label class="label">Género: <span class="span-req">*</span></label>
+            <div class="section-check">
+                <div class="control">
+                    <label class="radio">
+                        <input type="radio" name="answer">
+                        Femenino
+                    </label>
+                </div>
+                <div class="control">
+                    <label class="radio">
+                        <input type="radio" name="answer">
+                        Masculino
+                    </label>
+                </div>
+                <div class="control">
+                    <label class="radio">
+                        <input type="radio" name="answer">
+                        otro
+                    </label>
+                </div>
             </div>
         </div>
-    </div>
-    {{!--  Correo electrónico alternativo--}}
-    <div class="field is-horizontal box">
-        <div class="tags">
-            <label class="label has-text-light">Lorem ipsum dolor sit amet.<p class="span-required-text">*Obligatorio
-                </p><span class="forma"></span></label>
-        </div>
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">Correo electrónico alternativo: <span class="span-req">*</span></label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu correo electrónico alternativo">
-                </p>
+        {{!-- CURP--}}
+        <div class="block">
+            <div class="field is-horizontal">
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">CURP: <span class="span-req">*</span></label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input is-purple" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    {{!--  Teléfono de contacto--}}
-    <div class="field is-horizontal box">
-        <div class="tags">
-            <label class="label has-text-light">Lorem ipsum dolor sit amet.<p class="span-required-text">*Obligatorio
-                </p><span class="forma"></span></label>
-        </div>
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">Teléfono de contacto: <span class="span-req">*</span></label>
-        </div>
-        <div class="field-body block ">
-            <div class="field">
-                <p class="control input-width-small">
-                    <input class="input" type="number" placeholder=" Lada">
-                </p>
+        {{!--  Correo electrónico alternativo--}}
+        <div class="block">
+            <div class="field is-horizontal">
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">Correo electrónico alternativo: <span class="span-req">*</span></label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input is-purple" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    {{!--  Módulo domicilio actual--}}
-    <div class="field is-horizontal box">
-        <div class="tags">
-            <label class="label has-text-light">Lorem ipsum dolor sit amet.<p class="span-required-text">*Obligatorio
-                </p><span class="forma"></span></label>
-        </div>
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">Domicilio actual </label>
-        </div>
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">Calle: <span class="span-req">*</span></label>
-        </div>
-        <div class="field-body block block">
-            <div class="field">
-                <p class="control">
-                    <input class="input " type="text" placeholder=" Aquí tu calle">
-                </p>
+        {{!--  Teléfono de contacto--}}
+        <div class="block">
+            <div class="field is-horizontal">
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">Teléfono de contacto: <span class="span-req">*</span></label>
+                </div>
+                <div class="field-body block ">
+                    <div class="field">
+                        <p class="control input-width-small">
+                            <input class="input is-purple" type="number" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
+        {{!--  Módulo domicilio actual--}}
+        <div class="block">
+            <div class="field is-horizontal">
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">Domicilio actual </label>
+                </div>
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">Calle: <span class="span-req">*</span></label>
+                </div>
+                <div class="field-body block block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input is-purple" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
 
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label" type="number">Número exterior: <span class="span-req">*</span></label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu número exterior">
-                </p>
-            </div>
-        </div>
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label" type="number">Número interior: <span class="span-req">*</span></label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu número interior">
-                </p>
-            </div>
-        </div>
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">Colonia/Fraccionamiento: <span class="span-req">*</span></label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu colonia/fraccionamiento">
-                </p>
-            </div>
-        </div>
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label" type="number">Número exterior: <span class="span-req">*</span></label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input is-purple" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label" type="number">Número interior: <span class="span-req">*</span></label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input is-purple" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">Colonia/Fraccionamiento: <span class="span-req">*</span></label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input is-purple" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
 
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">Localidad: <span class="span-req">*</span></label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu localidad">
-                </p>
-            </div>
-        </div>
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">Localidad: <span class="span-req">*</span></label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input is-purple" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
 
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">Estado: <span class="span-req">*</span></label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu estado">
-                </p>
-            </div>
-        </div>
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">Estado: <span class="span-req">*</span></label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input is-purple" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
 
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">Municipio: <span class="span-req">*</span></label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu municipio">
-                </p>
+                <div class="field-is is-normal" id="field-quizz">
+                    <label class="label">Municipio: <span class="span-req">*</span></label>
+                </div>
+                <div class="field-body block">
+                    <div class="field">
+                        <p class="control">
+                            <input class="input is-purple" type="text" placeholder="respuesta">
+                        </p>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
     {{!--  Módulo enfermedad/discapacidad--}}
     <div class="field is-horizontal box">
         <div class="tags">
-            <label class="label has-text-light">Lorem ipsum dolor sit amet.<p class="span-required-text">*Obligatorio
-                </p><span class="forma"></span></label>
+            <label class="label has-text-light">Datos de emergencia<span class="forma"></span></label>
         </div>
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">Si padeces alguna enfermedad o discapacidad favor de indicarla: <span
-                    class="span-req">*</span></label>
-        </div>
-        <div class="field-body block">
-            <div class="field">
-                <p class="control">
-                    <input class="input" type="text"
-                        placeholder=" Aquí algún padecimiento de una enfermedad o discapacidad">
-                </p>
+        <div class="block">
+            <div class="field-is is-normal" id="field-quizz">
+                <label class="label">Si padeces alguna enfermedad o discapacidad favor de indicarla: <span
+                        class="span-req">*</span></label>
+            </div>
+            <div class="field-body block">
+                <div class="field">
+                    <p class="control">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
+                    </p>
+                </div>
             </div>
         </div>
         {{!--  Módulo checkbox--}}
-        <label class="label">En caso de padecer alguna enfermedad ¿recibes tratamiento?: </label>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                Si
-            </label>
-        </div>
-        <div class="section-check">
-            <label class="checkbox">
-                <input type="checkbox">
-                No
-            </label>
+        <div class="block">
+            <label class="label">En caso de padecer alguna enfermedad ¿recibes tratamiento?: </label>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Si
+                </label>
+            </div>
+            <div class="section-check">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    No
+                </label>
+            </div>
         </div>
     </div>
 
     {{!--  Módulo de contactos--}}
     <div class="field is-horizontal box">
         <div class="tags">
-            <label class="label has-text-light">Lorem ipsum dolor sit amet.<p class="span-required-text">*Obligatorio
-                </p><span class="forma"></span></label>
-        </div>
-        <div class="field-is is-normal" id="field-quizz">
-            <label class="label">Favor de indicar dos contactos en caso de emergencia </label>
+            <label class="label has-text-light">Favor de indicar dos contactos en caso de emergencia<span class="forma"></span></label>
         </div>
         {{!--  Contacto 1--}}
-        <div class="block">
+        <div class="block subsection">
             <div class="field-is is-normal" id="field-quizz">
                 <label class="label">Contacto 1 </label>
             </div>
+        </div>
+        <div class="block">
             <div class="field-is is-normal" id="field-quizz">
                 <label class="label">Nombre(s): <span class="span-req">*</span></label>
             </div>
             <div class="field-body block block">
                 <div class="field">
                     <p class="control">
-                        <input class="input " type="text" placeholder=" Aquí tu escuela de procedencia">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
                     </p>
                 </div>
             </div>
@@ -310,7 +298,7 @@
             <div class="field-body block">
                 <div class="field">
                     <p class="control">
-                        <input class="input" type="text" placeholder=" Aquí tu escuela de procedencia">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
                     </p>
                 </div>
             </div>
@@ -321,7 +309,7 @@
             <div class="field-body block">
                 <div class="field">
                     <p class="control">
-                        <input class="input" type="text" placeholder=" Aquí tu escuela de procedencia">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
                     </p>
                 </div>
             </div>
@@ -332,7 +320,7 @@
             <div class="field-body block">
                 <div class="field">
                     <p class="control">
-                        <input class="input" type="text" placeholder=" Aquí tu escuela de procedencia">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
                     </p>
                 </div>
             </div>
@@ -343,7 +331,7 @@
             <div class="field-body block ">
                 <div class="field">
                     <p class="control input-width-small">
-                        <input class="input" type="number" placeholder=" Lada">
+                        <input class="input is-purple" type="number" placeholder="respuesta">
                     </p>
                 </div>
             </div>
@@ -363,7 +351,7 @@
             <div class="field-body block block">
                 <div class="field">
                     <p class="control">
-                        <input class="input " type="text" placeholder=" Aquí tu calle">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
                     </p>
                 </div>
             </div>
@@ -372,7 +360,7 @@
             </div>
             <div class="field">
                 <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu número exterior">
+                    <input class="input is-purple" type="text" placeholder="respuesta">
                 </p>
             </div>
             <div class="field-is is-normal" id="field-quizz">
@@ -381,7 +369,7 @@
             <div class="field-body block">
                 <div class="field">
                     <p class="control">
-                        <input class="input" type="text" placeholder=" Aquí tu número interior">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
                     </p>
                 </div>
             </div>
@@ -392,7 +380,7 @@
             <div class="field-body block">
                 <div class="field">
                     <p class="control">
-                        <input class="input" type="text" placeholder=" Aquí tu colonia/fraccionamiento">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
                     </p>
                 </div>
             </div>
@@ -402,7 +390,7 @@
             <div class="field-body block">
                 <div class="field">
                     <p class="control">
-                        <input class="input" type="text" placeholder=" Aquí tu localidad">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
                     </p>
                 </div>
             </div>
@@ -412,7 +400,7 @@
             <div class="field-body block">
                 <div class="field">
                     <p class="control">
-                        <input class="input" type="text" placeholder=" Aquí tu estado">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
                     </p>
                 </div>
             </div>
@@ -422,23 +410,25 @@
             <div class="field-body block">
                 <div class="field">
                     <p class="control">
-                        <input class="input" type="text" placeholder=" Aquí tu municipio">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
                     </p>
                 </div>
             </div>
         </div>
         {{!--  Contacto 2--}}
-        <div>
+        <div class="block subsection">
             <div class="field-is is-normal" id="field-quizz">
                 <label class="label">Contacto 2 </label>
             </div>
+        </div>
+        <div class="block">
             <div class="field-is is-normal" id="field-quizz">
                 <label class="label">Nombre(s): <span class="span-req">*</span></label>
             </div>
             <div class="field-body block block">
                 <div class="field">
                     <p class="control">
-                        <input class="input " type="text" placeholder=" Aquí tu escuela de procedencia">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
                     </p>
                 </div>
             </div>
@@ -449,7 +439,7 @@
             <div class="field-body block">
                 <div class="field">
                     <p class="control">
-                        <input class="input" type="text" placeholder=" Aquí tu escuela de procedencia">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
                     </p>
                 </div>
             </div>
@@ -460,7 +450,7 @@
             <div class="field-body block">
                 <div class="field">
                     <p class="control">
-                        <input class="input" type="text" placeholder=" Aquí tu escuela de procedencia">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
                     </p>
                 </div>
             </div>
@@ -471,7 +461,7 @@
             <div class="field-body block">
                 <div class="field">
                     <p class="control">
-                        <input class="input" type="text" placeholder=" Aquí tu escuela de procedencia">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
                     </p>
                 </div>
             </div>
@@ -482,7 +472,7 @@
             <div class="field-body block ">
                 <div class="field">
                     <p class="control input-width-small">
-                        <input class="input" type="number" placeholder=" Lada">
+                        <input class="input is-purple" type="number" placeholder="respuesta">
                     </p>
                 </div>
             </div>
@@ -502,7 +492,7 @@
             <div class="field-body block block">
                 <div class="field">
                     <p class="control">
-                        <input class="input " type="text" placeholder=" Aquí tu calle">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
                     </p>
                 </div>
             </div>
@@ -511,7 +501,7 @@
             </div>
             <div class="field">
                 <p class="control">
-                    <input class="input" type="text" placeholder=" Aquí tu número exterior">
+                    <input class="input is-purple" type="text" placeholder="respuesta">
                 </p>
             </div>
             <div class="field-is is-normal" id="field-quizz">
@@ -520,7 +510,7 @@
             <div class="field-body block">
                 <div class="field">
                     <p class="control">
-                        <input class="input" type="text" placeholder=" Aquí tu número interior">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
                     </p>
                 </div>
             </div>
@@ -531,7 +521,7 @@
             <div class="field-body block">
                 <div class="field">
                     <p class="control">
-                        <input class="input" type="text" placeholder=" Aquí tu colonia/fraccionamiento">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
                     </p>
                 </div>
             </div>
@@ -541,7 +531,7 @@
             <div class="field-body block">
                 <div class="field">
                     <p class="control">
-                        <input class="input" type="text" placeholder=" Aquí tu localidad">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
                     </p>
                 </div>
             </div>
@@ -551,7 +541,7 @@
             <div class="field-body block">
                 <div class="field">
                     <p class="control">
-                        <input class="input" type="text" placeholder=" Aquí tu estado">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
                     </p>
                 </div>
             </div>
@@ -561,7 +551,7 @@
             <div class="field-body block">
                 <div class="field">
                     <p class="control">
-                        <input class="input" type="text" placeholder=" Aquí tu municipio">
+                        <input class="input is-purple" type="text" placeholder="respuesta">
                     </p>
                 </div>
             </div>
