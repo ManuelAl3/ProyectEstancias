@@ -4,21 +4,28 @@
     padding: 0;
     margin:0;
     bottom: 0;
-    
 }
 
-/*Variables de color global*/
+/*Variables globales*/
 :root {
+    --navbar-color-background: ;
+    --bg-body-color: linear-gradient(to right, #f0f0f0, #f6f6f6);
     --main-color: #863f92;
     --main-bg-color: #863f92;
     --main-text-color-button: white;
     --main-bd-color: #863f92;
-    --main-bd-f-color: rgba(134, 63, 146, 0.49);
+    --main-bd-f-color: rgb(134, 63, 146);
     --main-bd-bt: 2px solid rgb(195, 195, 195);
     --main-icon-color: #863f9285;
     --main-icon-color-hover: #863f92c9;
     --main-icon-tdf: rgb(133, 133, 133);
 }
+
+body {
+    background: var(--bg-body-color);
+}
+
+
 
 /*Contenedor registro y login*/
 .section-register, 
@@ -36,21 +43,6 @@
     background-position: 0px -35px;
     width:60%;
 }
-
-/*.container-register-left:before{
-    content: '';
-    position: absolute;
-    width: 2000px;
-    height: 2000px;
-    border-radius: 50%;
-    background: linear-gradient(-45deg, #bc44eb, #863f92);
-    top: -10%;
-    right: 48%;
-    transform: translateY(-50%);
-    transition: 1.8s ease-in-out;
-    border-radius: 50%;
-    z-index: 6;
-}*/
 
 /*Contenedor del registro y login lado derecho*/
 .container-register-right, 
@@ -92,11 +84,6 @@
 .container-register,
 .container-login {
     width: 75%;
-}
-
-.field h1 {
-    font-size: 2.5rem;
-    
 }
 
 /*Input*/
@@ -179,7 +166,7 @@ select:hover {
 
 .input:focus {
     border-color: var(--main-bd-color);
-    box-shadow: 0 0 0 0.1rem var(--main-bd-f-color);
+    box-shadow: 0 0 0.125em var(--main-bd-f-color);
 }
 
 .button.is-purple:hover {

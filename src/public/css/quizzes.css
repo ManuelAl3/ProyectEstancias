@@ -1,0 +1,155 @@
+:root {
+    --main-color-massege-tittle: white;
+    --main-bg-color-box: white;
+    --main-span-color: #d93025;
+}
+
+/*Modulo de mensaje*/
+.container-message {
+    width: 50%;
+}
+
+.tags {
+    color: #863f92;
+    background-color: #863f92;
+    padding: 10px 20px;
+    margin-left: -40px;
+    position: relative;
+    width: 70%;
+    border-radius: 6px 6px 6px 0px;
+}
+
+.forma {
+    width: 0px;
+    height: 0px;
+    line-height: 0px;
+    border-left: 20px solid transparent;
+    border-top: 10px solid #742c81;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+}
+
+.list-style li {
+    list-style-type: disc;
+    margin-left: 50px;
+}
+
+/*Titulo principal de las encuestas*/
+.title-main-quizz {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+/*Input*/
+.field-is {
+    padding-bottom: .6em;
+}
+
+.control .control-input:hover {
+    border-bottom: 1px solid #863f92;
+}
+
+.control-input:focus {
+    border-color: var(--main-bd-color);
+}
+
+/*Span*/
+.span-req {
+    color: var(--main-span-color);
+}
+
+.span-required-text {
+
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    line-height: 20px;
+    margin-top: 12px;
+}
+
+/*Sección de preguntas*/
+.quizz-main {
+    width: 50%;
+    max-width: 90vw;
+}
+
+/*Boxes*/
+.box {
+    background-color: var(--main-bg-color-box);
+    box-shadow: none;
+}
+
+/*Botón*/
+.btn-section .is-purple-quizz-save {
+    width: 30%;
+    align-content: center;
+    margin-bottom: 13px;
+    margin-top: 15px;
+    background-color: #853194;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: .375em;
+    background-position: center center;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.btn-section.block {
+    cursor: normal;
+}
+
+.btn-section.block .label {
+    cursor: normal;
+}
+
+.btn-section.block .label .control {
+    cursor: normal;
+}
+
+.btn-section .is-purple-quizz-save:hover {
+    background-color: #752981;
+    color: white;
+}
+
+.button.is-purple-quizz {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color-button);
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+.button.is-purple-quizz:hover {
+    background-color: rgb(124, 56, 136);
+}
+
+/*Código media*/
+@media only screen and (max-width: 1024px) {
+    .quizz-main {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 769px),
+print {
+    .field.is-horizontal {
+        display: revert;
+    }
+
+
+}
+
+@media only screen and (max-width: 769px) {
+    .container-message {
+        width: 90%;
+    }
+
+    .title-main-quizz {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+}
