@@ -1,0 +1,17 @@
+@media screen and (min-width: 1024px) {
+    .navbar-dropdown {
+        background-color: #fff;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-top: 2px solid #dbdbdb;
+        box-shadow: 0 8px 8px rgb(10 10 10 / 10%);
+        display: none;
+        font-size: .875rem;
+        left: 0;
+        min-width: 100%;
+        position: absolute;
+        top: 100%;
+        z-index: 20;
+        height: 150px;
+    } 
+}   

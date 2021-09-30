@@ -61,7 +61,6 @@
 }
 
 .span-required-text {
-
     font-family: Roboto, Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -80,6 +79,21 @@
 .box {
     background-color: var(--main-bg-color-box);
     box-shadow: none;
+}
+
+.main-box-card {
+    width: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.box-card-second {
+    padding: 24px;
+    justify-content: center;
 }
 
 /*Botón*/

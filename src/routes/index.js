@@ -8,8 +8,13 @@ router. get('/', (req, res) => {
 });
 
 //Ruta del login
+router.get('/password-recovery', (req, res) => {
+    res.render('auth/password-recovery');
+});
+
+//Ruta de recuperar contraseña
 router.get('/login', (req, res) => {
-    res.render('auth/login');
+  res.render('auth/login');
 });
 
 //Ruta de las encuestas

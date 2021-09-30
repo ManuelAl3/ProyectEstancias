@@ -23,6 +23,7 @@
 
 body {
     background: var(--bg-body-color);
+    min-height: 100vh;
 }
 
 /*navbar*/
@@ -61,7 +62,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    animation: transicion 1.5s ease-out;;
+    animation: transicion 1.5s ease-out;
 }
 
 /*Transición en login y registro*/
@@ -91,7 +92,7 @@ body {
     width: 75%;
 }
 
-/*Input*/
+/*Inputs*/
 .is-purple{
     border-color: var(--main-bg-color);
     border: none;
@@ -127,6 +128,20 @@ i.fas {
     outline: none;
 }
 
+button.is-redounded-main {
+    color: rgba(0,0,0,0.5);
+    width: 100%;
+    border: none;
+    font-weight: bolder;
+}
+
+button.is-redounded-main:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.5);
+    border: solid .05px rgba(0, 0, 0, 0.164);
+}
+
+
 .hashtag {
     color: var(--main-icon-tdf);
 }
@@ -149,7 +164,7 @@ i.fas {
     color: var(--main-color);
 }
 
-input.input:hover {
+input.is-purple:hover {
     border-bottom: solid var(--main-bg-color) 2px;
     border-color: var(--main-bg-color);
 }
@@ -170,7 +185,7 @@ select:hover {
     background: rgb(243, 243, 243); 
 }
 
-.input:focus {
+.is-purple:focus {
     border-color: var(--main-bd-color);
     box-shadow: 0 0 0.125em var(--main-bd-f-color);
 }
