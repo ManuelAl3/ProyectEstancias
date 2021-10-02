@@ -1,0 +1,19 @@
+body {
+    background: #f5f6f5;
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+}
+
+.index {
+    width: 100%;
+    height: 100%;
+}
+
+.masthead {
+    color: black;
+    min-height: 30rem;
+    width: 100%;
+    height: 100%;
+    padding-top: 8rem;
+    background:url('/imges/background.jpeg');
+}

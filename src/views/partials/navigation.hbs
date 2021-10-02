@@ -14,30 +14,47 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item">
-        Documentation
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          Encuestas
+      
+      {{#if user}}
+        <a class="navbar-item">
+          Documentation
         </a>
 
-        <div class="navbar-dropdown">
-          <a class="navbar-item">
-            Encuesta de ingreso
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Encuestas
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="/encuesta/encuesta-ingreso" class="navbar-item">
+                Encuesta de ingreso
+              </a>
+              <a href="/encuesta/encuesta-egresados" class="navbar-item">
+                Encuesta de egreso
+              </a>
+              <a href="/encuesta/estudio-socio-economico" class="navbar-item">
+                Estudio socio economico
+              </a>
+              <a href="/encuesta/ficha-identificacion-alumnos" class="navbar-item">
+                Ficha de identificación
+              </a>
+            </div>
+          </div>
+          
+          <a href="/profile" class="navbar-item">
+            Profile
           </a>
-          <a class="navbar-item">
-            Encuesta de egreso
+          <a href="/logout" class="navbar-item">
+            Cerrar sesión
           </a>
-          <a class="navbar-item">
-            Estudio socio economico
-          </a>
-          <a class="navbar-item">
-            Ficha de identificación
-          </a>
-        </div>
-      </div>
+      {{else}}
+        <a href="/login" class="navbar-item">
+          Iniciar sesión
+        </a>
+        <a href="/signup" class="navbar-item">
+          Registrarse
+        </a>
+      {{/if}}
     </div>
   </div>
 </nav>

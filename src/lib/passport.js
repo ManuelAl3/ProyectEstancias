@@ -51,7 +51,7 @@ passport.use('local.signup', new LocalStrategy({ //By default, LocalStrategy exp
     newUser.user_id = result.insertId;
     return done(null, newUser);
 }));
-/*
+
 //Guarda el usuario dentro de la seseón
 passport.serializeUser((user, done) => {
     done(null, user.id);
@@ -66,4 +66,4 @@ passport.serializeUser((user, done) => {
 passport.deserializeUser(async (id, done) => {
     const rows = await pool.query('SELECT * FROM users Where user_id = ?', [id]);
     done(null, rows[0]);
-});*/
+});

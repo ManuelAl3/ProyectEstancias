@@ -2,9 +2,11 @@ const express = require('express');
 const router = express.Router();
 
 const conexion = require('../database')
+const { isLoggedIn } = require('../lib/auth');
 
 router. get('/', (req, res) => {
-    res.send('Hello world');
+  //res.render('index');
+  res.send('Hello world');
 });
 
 //Ruta del login
@@ -18,23 +20,23 @@ router.get('/login', (req, res) => {
 });
 
 //Ruta de las encuestas
-router.get('/encuesta/encuesta-ingreso', function(req, res){
+router.get('/encuesta/encuesta-ingreso', isLoggedIn, function(req, res){
     res.render('quizzes/income-survey')
   });
   
-  router.get('/encuesta/ficha-identificacion-alumnos', function(req, res){
+  router.get('/encuesta/ficha-identificacion-alumnos', isLoggedIn, function(req, res){
     res.render('quizzes/student-identification')
   });
   
-  router.get('/encuesta/estudio-socio-economico', function(req, res){
+  router.get('/encuesta/estudio-socio-economico', isLoggedIn, function(req, res){
     res.render('quizzes/study-economic')
   });
   
-  router.get('/encuesta/encuesta-egresados', function(req, res){
+  router.get('/encuesta/encuesta-egresados', isLoggedIn, function(req, res){
     res.render('quizzes/graduate-survey')
   });
   
-  router.get('/encuesta/encuesta-seguimiento-egresados', function(req, res){
+  router.get('/encuesta/encuesta-seguimiento-egresados', isLoggedIn, function(req, res){
     res.render('quizzes/graduate-follow-up-survey')
   });
 
