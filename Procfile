@@ -1,1 +1,1 @@
-web: npm nodemon src/
+web: npm run start:prod
